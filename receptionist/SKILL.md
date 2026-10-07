@@ -47,6 +47,12 @@ When a caller cancels, ask the reason once ("did you get it fixed, or just no lo
 
 **What this bought, 2026-10-07:** three cancellations before noon, three new bookings into the same slots by two o'clock. The cost was churn, not an empty truck.
 
+## Emergencies skip the queue
+
+Every trade has calls that cannot wait for the fourth ask: for a plumber an active leak, a sewage backup, no water; for an electrician a burning smell or sparks; for a gas appliance any gas smell. The owner writes the list for their trade, and the agent treats a call on that list differently: safety line first ("please leave the house and call the gas company or 911 from outside"), then name and number, then the transfer or the owner's emergency number without counting asks. The agent never invents the list or the safety line; both are the owner's words, approved before the line goes live, because they carry liability.
+
+**What went wrong, 2026-10-07:** the first outside test of this skill, an agent drafting for a fictional plumber, found that the appliance rules had no urgent path at all. A caller standing in water who has to ask four times for a human calls someone else. The rule above was written the same evening; the list and the safety line stay the owner's.
+
 ## Say what you are, once
 
 The agent says it is an AI receptionist and that the call is recorded, once, at the start. It does not repeat it and does not apologize for it. It corrects its identity only if the caller asks directly.
@@ -72,6 +78,8 @@ No prices beyond the diagnostic fee the owner set. No repair steps. No parts. No
 Say so plainly, in one sentence, and offer the one fallback the business actually has (a website booking page, a callback). Do not retry out loud. Do not pretend.
 
 ## Known failure modes
+
+- The rules were written for one trade. The first test on another trade found a missing class of call (emergencies) in under a minute. Expect your trade to have one too.
 
 - The model obeys a rule in the transcript and the platform breaks it in the audio (the filler lines). Listen.
 - A rule that lives only in the prompt drifts within a month. Service area, double-booking and duplicate records all moved to code after the prompt version failed.
