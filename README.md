@@ -19,6 +19,8 @@ Every rule carries the incident that produced it, dated when the date is known, 
 | [second-model-brief](second-model-brief/SKILL.md) | How to brief a second AI model, read its memo back against the sources, and reconcile it before anyone acts. |
 | [resale-identification](resale-identification/SKILL.md) | Identify used furniture and household goods from phone photos, say what they tend to sell for, draft the listing; photo versus in hand; never a value as fact. |
 | [field-ticket](field-ticket/SKILL.md) | Turn a technician's spoken findings into the ticket the customer reads: the visible write-up, parts lines that say only what the part is, prices the technician owns. |
+| [starting-a-home-service-business](starting-a-home-service-business/SKILL.md) | The eleven steps for a one-person home-service business, in order, each with a "done when" and the line between what an agent does and what the owner must do. |
+| [business-license-research](business-license-research/SKILL.md) | Research every license, registration, tax account and insurance requirement for a given state, county or parish, and city, from official sources only, as a checklist the owner acts on after a second read. |
 
 ## Install
 
