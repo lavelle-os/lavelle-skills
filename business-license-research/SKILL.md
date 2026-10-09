@@ -27,6 +27,7 @@ A license question is a legal question. Every line you write carries its source 
 8. Whether they plan to run as a sole proprietor or form a company, and whether that is decided or open.
 9. Whether they personally hold the trade's credential (a plumbing, gas, electrical or refrigerant card), or will work under someone who does.
 10. The city of the business address, so you know which city clerk; never the street.
+11. Residential customers, commercial customers, or both. Trade-license exemptions often turn on it: a state that exempts household-appliance work may still license the same work on a restaurant's equipment.
 
 One question at a time when they are answering live. If they hand you the facts in one block, take the block and ask only what is missing. If a fact is missing and they cannot answer, write the row both ways and mark it.
 
@@ -34,7 +35,7 @@ Do not ask for a date of birth, a Social Security number, a driver's license num
 
 ## Where to look, and what counts as a source
 
-Official pages only: a state or county or city government site, a licensing board's own site, the IRS, the EPA. Aggregator and "start your business" sites are leads to the right office, never the source. If the official page cannot be opened, the line stays UNVERIFIED and says why.
+Official pages only: a state or county or city government site, a licensing board's own site, the IRS, the EPA. Aggregator and "start your business" sites are leads to the right office, never the source. A search engine's summary is a lead, not a page; a fetch tool's summary of a page is not the page either. When a government site refuses one tool, try a real browser before you write UNVERIFIED; county and census sites often refuse scripts and open fine in a browser. If the page still cannot be opened, the line stays UNVERIFIED and says why. Beside the date you opened it, write the date the document itself carries; a handbook with a two-year-old cover is a two-year-old fact.
 
 | Requirement | Who usually issues it | What to find |
 |---|---|---|
@@ -61,7 +62,7 @@ One row per requirement, in the order the owner will do them:
 
 Requirement | Who issues it | Official source and date opened | Cost and renewal | Status
 
-Status is CONFIRMED, UNVERIFIED, NOT REQUIRED or LATER, as defined above. When nothing was opened, the source column says "none opened" and the cost column says "unknown"; an empty cell is not allowed. A fee without a date is a rumor.
+Status is CONFIRMED, UNVERIFIED, NOT REQUIRED or LATER, as defined above. A row usually holds two facts, the fee and whether it applies to this owner, and they get separate labels when they differ: "fee CONFIRMED; applies to a truck-only business UNVERIFIED." NOT REQUIRED cites the section and quotes the few words that say so. When nothing was opened, the source column says "none opened" and the cost column says "unknown"; an empty cell is not allowed. A fee without a date is a rumor.
 
 Order the rows by what depends on what: the trade credential first if the trade needs one, then the name and entity, then the federal tax number, then the state license, the county or parish, the city, then the sales tax account, which must exist before the first part is sold, then insurance, which must exist before the first job. Rows that attach later, such as employer registrations before the first hire, stay on the list marked LATER so they are not forgotten. Rows for work the owner says they will not do, such as refrigerant for a plumber, stay on the list marked NOT REQUIRED only if the office's page says so; otherwise UNVERIFIED with a note that the work is outside what was described.
 
@@ -77,7 +78,7 @@ Facts as found by the owner in 2018 and re-checked since, written here as the sh
 - The city issues its own business license, with a fee by trade, and asks whether the business is inside the city limits. UNVERIFIED for the current fee.
 - Appliance repair had no state trade license, but anyone opening a sealed refrigeration system needs the federal EPA Section 608 certification. UNVERIFIED here, because this file cites no page; the owner holds the card, which is not the same as a source.
 - Parts sold to customers are taxable, so a sales tax account is needed before the first part is sold. UNVERIFIED for the current rates by city and county.
-- An LLC files an annual business privilege tax return with the state even when it owes little. UNVERIFIED for the current threshold.
+- An LLC owed an annual business privilege tax, with a minimum, every year the owner ran one. The first real-state test run on 2026-10-09 found the state's own 2025 instructions now waive the filing at the minimum amount; UNVERIFIED until a second reader opens that page. This is the example doing what examples do: going stale.
 
 The owner found each of these by walking into an office. The point of this skill is that the next owner gets the list first and the offices second.
 
@@ -93,10 +94,12 @@ Never file a form, create an account, or pay a fee on the owner's behalf. Never 
 - A fee from a two-year-old page gets quoted as current.
 - The agent, trying to be helpful, starts the filing. It must stop at the checklist.
 - The second pass gets skipped because the first pass looks thorough. That is the failure the 2026-09 rule exists for.
-- The worked example gets copied as if it were the answer for another state.
+- The worked example gets copied as if it were the answer for another state, or for this state two years later.
+- A search engine's summary says a city collects its own sales tax when the state's page says the state collects it. The summary was the lead; the page was the source.
+- Two official pages disagree about where a return goes. Write both, cite both, and put it on the clerk's list.
 - A row that applies later gets dropped instead of marked LATER, and the first hire arrives with no withholding account.
 
-**Found by the one test, 2026-10-09:** a smaller model, given a fictional parish and state and no web, produced the checklist with every row UNVERIFIED, invented nothing and filed nothing, then listed fourteen places the wording was unclear. The four statuses, the order rule, the empty-cell rule, the per-job permit row, the ask-first additions and the numbers-you-may-hold line all came from that run.
+**Found by the one test, 2026-10-09:** a smaller model, given a fictional parish and state and no web, produced the checklist with every row UNVERIFIED, invented nothing and filed nothing, then listed fourteen places the wording was unclear. The four statuses, the order rule, the empty-cell rule, the per-job permit row, the ask-first additions and the numbers-you-may-hold line all came from that run. **The same evening, with the web on and a real Alabama city,** the same model opened state, county, city, federal and board pages, brought back nine CONFIRMED rows with URLs and dates, one NOT REQUIRED with the exemption's section cited, one LATER, and four UNVERIFIED, and found two lines of this file's own worked example out of date. The two-tool rule, the split status, the document-date rule and the residential-or-commercial question came from that run.
 
 ## Starting yours
 
