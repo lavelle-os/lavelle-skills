@@ -11,7 +11,7 @@ You are helping someone who wants to start a home-service business find out what
 
 ## The one rule that comes first
 
-A license question is a legal question. Every line you write carries its source and the date you opened it, and is labeled CONFIRMED or UNVERIFIED. Nothing you find is acted on until a second reader, a different model or a person, has re-opened the source. The owner then confirms with the office or a tax preparer. You are the first pass, never the last.
+A license question is a legal question. Every line you write carries its source and the date you opened it, and one of four labels: CONFIRMED (you opened the issuing office's own page and it says so), UNVERIFIED (you could not open it, and you say what blocked you), NOT REQUIRED (the office's own page says so, quoted), or LATER (it applies at a step that has not come, such as the first hire). CONFIRMED means the first pass saw the page; it does not mean the owner can act. Nothing is acted on until a second reader, a different model or a person, has re-opened the source. The owner then confirms with the office or a tax preparer. You are the first pass, never the last.
 
 **What went wrong, 2026-09:** three legal findings in one week, each confident and sourced, were caught on the second pass, including one where the first reading had the holding backwards. The rule became standing that week.
 
@@ -24,6 +24,11 @@ A license question is a legal question. Every line you write carries its source 
 5. Employees now, or later. The first hire changes the list.
 6. Selling parts to customers, or only installing them. Sales tax follows that.
 7. The business name they want to use, and whether it is their own name.
+8. Whether they plan to run as a sole proprietor or form a company, and whether that is decided or open.
+9. Whether they personally hold the trade's credential (a plumbing, gas, electrical or refrigerant card), or will work under someone who does.
+10. The city of the business address, so you know which city clerk; never the street.
+
+One question at a time when they are answering live. If they hand you the facts in one block, take the block and ask only what is missing. If a fact is missing and they cannot answer, write the row both ways and mark it.
 
 Do not ask for a date of birth, a Social Security number, a driver's license number, or any account number. The checklist does not need them and you must never hold them.
 
@@ -33,13 +38,14 @@ Official pages only: a state or county or city government site, a licensing boar
 
 | Requirement | Who usually issues it | What to find |
 |---|---|---|
-| Business entity and name | Secretary of State | Name availability, formation filing, annual report, registered agent, trade-name (DBA) rules |
+| Business entity and name | Secretary of State; sometimes the county or parish clerk for a trade name | Name availability, formation filing, annual report, registered agent, trade-name (DBA) rules, and whether the county, parish or city registers trade names separately |
 | Federal tax number (EIN) | IRS, free, online | That it is free; anyone charging for it is a reseller |
 | State business license or privilege license | State revenue department, often issued through the county license commissioner or probate office | Whether it exists in this state, the fee, the renewal month |
 | County license | County license commissioner, clerk, or probate | Whether the county has its own, separate from the state's |
 | City license | City clerk or revenue office | Fee schedule by trade, renewal, home-occupation permit, zoning |
 | Sales and use tax account | State revenue department, sometimes city and county too | Whether parts sold to customers are taxable, and whether labor is |
-| Trade license | The state board for that trade | Plumbing and gas, electrical, heating and refrigeration, general contractor dollar thresholds |
+| Trade license | The state board for that trade | Plumbing and gas, electrical, heating and refrigeration; whether the license is held by the person or the business; exam, experience and qualifier rules; any bond; the dollar threshold above which a general contractor license applies to construction work |
+| Per-job permits and inspections | City or county building, gas or electrical inspection office | Whether each gas, electrical or plumbing job needs its own permit and inspection, separate from any license |
 | Refrigerant handling | EPA Section 608 | Federal, applies to anyone opening a sealed system |
 | Insurance | State insurance department, workers' compensation board | General liability expectations, auto, the employee count that triggers workers' compensation |
 | Employer registrations | State labor department, state revenue | Withholding account, unemployment account, new-hire reporting |
@@ -47,23 +53,29 @@ Official pages only: a state or county or city government site, a licensing boar
 
 Use the local word. A search for "county" finds nothing in Louisiana, where it is a parish, or in Alaska, where it is a borough.
 
+The "who issues it" column above is the usual shape, not a fact about any one state. Until you have opened a state's pages, name the issuer by its role ("the state revenue department") and say so. Do not copy the worked example's office structure into another state; which office issues which license is one of the things you are researching.
+
 ## The checklist you hand back
 
 One row per requirement, in the order the owner will do them:
 
 Requirement | Who issues it | Official source and date opened | Cost and renewal | Status
 
-Status is one of: CONFIRMED, with the page that says so; UNVERIFIED, with what blocked you; NOT REQUIRED, only with the office's own words saying so. A fee without a date is a rumor.
+Status is CONFIRMED, UNVERIFIED, NOT REQUIRED or LATER, as defined above. When nothing was opened, the source column says "none opened" and the cost column says "unknown"; an empty cell is not allowed. A fee without a date is a rumor.
 
-End with three lines: what to verify with a tax preparer, what to verify with an attorney if money or partners are involved, and what to ask the city clerk in person.
+Order the rows by what depends on what: the trade credential first if the trade needs one, then the name and entity, then the federal tax number, then the state license, the county or parish, the city, then the sales tax account, which must exist before the first part is sold, then insurance, which must exist before the first job. Rows that attach later, such as employer registrations before the first hire, stay on the list marked LATER so they are not forgotten. Rows for work the owner says they will not do, such as refrigerant for a plumber, stay on the list marked NOT REQUIRED only if the office's page says so; otherwise UNVERIFIED with a note that the work is outside what was described.
+
+You may hold and write down the numbers the business itself is issued: a federal tax number, a sales tax account number, a license number. You may not hold a Social Security number, a driver's license or passport number, or a bank or card number, ever.
+
+End with three lines: what to verify with a tax preparer; what to verify with an attorney, written as conditional when the owner is alone and nothing is signed yet; and what to ask the city clerk in person. Asking the clerk is a question, not an action, so it can happen before the second read. Filing, paying and signing wait for it.
 
 ## Worked example: appliance repair, Alabama, as one owner found it
 
-Facts as found by the owner in 2018 and re-checked since, written here as the shape of an answer. Every line still needs the current page before anyone acts on it.
+Facts as found by the owner in 2018 and re-checked since, written here as the shape of an answer, not as sources. Every line is UNVERIFIED by this file's own rule until the current page is opened, and the office structure is Alabama's; another state's will differ.
 
 - The state business privilege license is issued through the county license commissioner's office, not the state capital, and renews every fall. UNVERIFIED until the current fee page is opened.
 - The city issues its own business license, with a fee by trade, and asks whether the business is inside the city limits. UNVERIFIED for the current fee.
-- Appliance repair has no state trade license, but anyone opening a sealed refrigeration system needs the federal EPA Section 608 certification. CONFIRMED for the federal rule; the state side needs the board's own page.
+- Appliance repair had no state trade license, but anyone opening a sealed refrigeration system needs the federal EPA Section 608 certification. UNVERIFIED here, because this file cites no page; the owner holds the card, which is not the same as a source.
 - Parts sold to customers are taxable, so a sales tax account is needed before the first part is sold. UNVERIFIED for the current rates by city and county.
 - An LLC files an annual business privilege tax return with the state even when it owes little. UNVERIFIED for the current threshold.
 
@@ -81,6 +93,10 @@ Never file a form, create an account, or pay a fee on the owner's behalf. Never 
 - A fee from a two-year-old page gets quoted as current.
 - The agent, trying to be helpful, starts the filing. It must stop at the checklist.
 - The second pass gets skipped because the first pass looks thorough. That is the failure the 2026-09 rule exists for.
+- The worked example gets copied as if it were the answer for another state.
+- A row that applies later gets dropped instead of marked LATER, and the first hire arrives with no withholding account.
+
+**Found by the one test, 2026-10-09:** a smaller model, given a fictional parish and state and no web, produced the checklist with every row UNVERIFIED, invented nothing and filed nothing, then listed fourteen places the wording was unclear. The four statuses, the order rule, the empty-cell rule, the per-job permit row, the ask-first additions and the numbers-you-may-hold line all came from that run.
 
 ## Starting yours
 
