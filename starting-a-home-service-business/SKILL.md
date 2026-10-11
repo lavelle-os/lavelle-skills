@@ -1,6 +1,7 @@
 ---
 name: starting-a-home-service-business
 description: The order of steps for starting a one-person home-service business (appliance repair, plumbing, electrical, HVAC, handyman, cleaning, lawn) and what an agent can do at each step versus what the owner must do. Use when someone says they want to start a trade or home-service business, or asks what to do first. The agent researches, drafts and keeps the list; the owner decides, signs, files and pays.
+license: MIT
 ---
 
 # Starting a home-service business
@@ -21,9 +22,9 @@ The owner's first paying job is the deadline. Every step below either must be do
 
 3. **Choose the entity and the name.** The agent lays out the questions, not the answer: sole proprietor now and an LLC later, or the LLC first; whether the name is available; what a registered agent is. The owner decides with a preparer. The owner in the worked example ran as a sole proprietor for his first years and formed a company later; neither order is wrong. Done when the owner has picked and the preparer has agreed.
 
-4. **Tax number, bank account, and books from the first dollar.** The federal tax number is free from the IRS. A separate bank account before the first deposit. A bookkeeping method, even a spreadsheet, from day one. **What went wrong, 2026-10:** an owner who had trusted an accountant for years had to reconstruct his own records when that relationship ended, with the prior years' returns as the only map. Books the owner can read himself are not optional. Done when the owner can say what came in and went out last week.
+4. **Tax number, bank account, and books from the first dollar.** The federal tax number is free from the IRS. A separate bank account before the first deposit. A bookkeeping method, even a spreadsheet, from day one. **What went wrong, 2026-10:** after a bookkeeper change, an owner had to reconstruct his own records, with the prior years' returns as the only map. Books the owner can read himself are not optional. Done when the owner can say what came in and went out last week.
 
-5. **Insurance.** General liability before the first job. Auto coverage that knows the truck is for work. Workers' compensation at the employee count the state sets, verified on the state's page. Done when the policy numbers exist and the renewal dates are on the calendar.
+5. **Insurance.** Questions for the owner's insurance agent, not answers. What general liability does the first job call for? Does the auto policy cover a truck used for work? What workers' compensation does the state require at the owner's employee count, according to the state's own page? Done when the agent has answered, the policy numbers exist and the renewal dates are on the calendar.
 
 6. **A phone number, a calendar, and a way to book.** A business number separate from the personal cell. Booking software with online booking, because customers book themselves at night. A receptionist agent can answer when the owner is under a sink; use the `receptionist` skill, which carries the rules learned from real calls. Done when a stranger can book a visit without the owner touching the phone.
 
@@ -33,7 +34,7 @@ The owner's first paying job is the deadline. Every step below either must be do
 
 9. **Being found.** In this order: the free business profile on the map, claimed and complete, with the real address and hours; a one-page site that says what you fix and where; reviews, answered in the owner's own voice with no sales pitch; videos of real repairs once the first three are in place. **What went wrong, 2026:** a listing left with a placeholder name and a made-up street sat in search for months, and a map ranking that had been lost took weeks of daily habits to recover. The profile is the storefront; keep it true. Done when a search for the trade and the town shows the business on the map.
 
-10. **The first hire.** Not until the owner is turning down work. The constraint in this industry is people, not playbooks: franchise systems say so in their own filings. A written screen for the first technician matters more than the job post. Done when the owner can say what a good first week looks like for the new person.
+10. **The first hire.** Questions for the owner, not advice. Is the owner turning down work yet? What would a written screen for the first technician ask? What would a good first week look like for the new person? Done when the owner can answer the last one in their own words.
 
 11. **What runs on agents and what stays with the owner.** Agents can answer the phone, book, draft tickets, look up parts, draft replies and posts, and keep the books in order. The owner decides prices, hires, what to decline, and anything that costs money. Promote an agent to a new job one job at a time, after it has done the job in draft for a while without a miss. Done when there is a written list of what the agent may do alone.
 

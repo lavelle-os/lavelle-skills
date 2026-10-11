@@ -1,6 +1,7 @@
 ---
 name: second-model-brief
 description: How to write a research brief for a second AI model, read its memo back, and reconcile it before anyone acts on it. Use when asked to draft a research brief, verify another model's findings, or decide whether a memo can be trusted. Never acts on an unreconciled memo.
+license: MIT
 ---
 
 # The second-model brief

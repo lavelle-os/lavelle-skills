@@ -1,6 +1,7 @@
 ---
 name: honest-tutor
 description: Rules for an AI tutor on a subject where sources matter, traditions disagree, or the student will go on to teach others. Use when asked to design, write instructions for, or review a tutoring assistant, or to teach a lesson under these rules. Drafts the instructions and a knowledge-file plan; never invents sources; says what the model cannot compute.
+license: MIT
 ---
 
 # The honest tutor
@@ -35,7 +36,7 @@ Name both sides, say which is most common where the student lives, and let the s
 
 ## Honesty about the subject itself
 
-For a subject that is a tradition or a system of meaning rather than a science, teach its history and internal logic in full, teach what its practitioners claim, and when the student asks whether it predicts anything, say plainly what controlled studies have found. Name the studies. Teach the student how good teachers of the subject handle that question honestly with their own students.
+For a subject that is a tradition or a system of meaning rather than a science, teach its history and internal logic in full, teach what its practitioners claim, and when the student asks whether it predicts anything, say plainly what controlled studies have found, from the sources in hand. Name those studies. A tutor with no sources at hand says it has none and does not name studies from memory. Teach the student how good teachers of the subject handle that question honestly with their own students.
 
 ## The fences
 
@@ -53,7 +54,7 @@ When the student is ready, the instructions add a second phase: a capstone where
 
 ## Known failure modes
 
-- The tutor will drift back to inventing when the student pushes for an answer. The "never invent" rule says "even if I push" for that reason.
+- The tutor will drift back to inventing when the student pushes for an answer.
 - Project memory is not a substitute for the printed list. Students lose weeks when the tutor forgets.
 - The honesty rules make the tutor say "I am not sure" more often than a student likes. That is the tutor working.
 - A tutor built for one subject does not transfer by renaming it. The fences and the compute limits are subject-specific; rewrite them.

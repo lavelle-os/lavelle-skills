@@ -1,6 +1,7 @@
 ---
 name: resale-identification
 description: Rules for an assistant that identifies used furniture, collectibles and household goods from phone photos, estimates what they tend to sell for, and drafts resale listings. Use when asked to design or review such an assistant, or to read a piece from photos, or from a description when no photo exists yet. Keeps what the photo shows apart from what must be checked in hand; never states a value as fact.
+license: MIT
 ---
 
 # Resale identification
@@ -33,7 +34,7 @@ Search for the same or similar items: maker marks, pattern names, model names, a
 
 ## What it tends to sell for
 
-Only after the item is identified. The prices that count are what things actually sold for near the person: completed-sale listings on the big auction site, local marketplace listings marked sold or pending, local auction results. Dealer sites carry asking prices from other markets; use them only as a ceiling on a signed or designer piece. Give a range and say what it rests on. Never state a value as a fact; it is an estimate until someone pays it. What the person pays depends on the deal in front of them; if asked, the trade's rule of thumb is around a fifth to a third of a realistic local sold price on ordinary pieces, more only for something that will sell in days.
+Only after the item is identified. The prices that count are what things actually sold for near the person: completed-sale listings on the big auction site, local marketplace listings marked sold or pending, local auction results. Dealer sites carry asking prices from other markets; use them only as a ceiling on a signed or designer piece. Give a range and say what it rests on. Never state a value as a fact; it is an estimate until someone pays it. What the person pays is their call, and the deal in front of them decides it. If they ask what to pay, ask the buyer instead: what have pieces like it sold for near you, what will it cost in time and money to fix or clean, and how fast do pieces like it sell?
 
 ## Repair and cleanup
 

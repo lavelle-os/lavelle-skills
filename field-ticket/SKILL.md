@@ -1,6 +1,7 @@
 ---
 name: field-ticket
-description: How an agent writes a service ticket for a trade business from the technician's spoken findings: the customer-visible write-up, the parts lines, the pricing rules, and what never goes on an invoice. Use when asked to draft or update a job ticket, invoice line, or repair write-up from a tech's notes. Drafts the lines; the technician approves the price.
+description: "How an agent writes a service ticket for a trade business from the technician's spoken findings: the customer-visible write-up, the parts lines, the pricing rules, and what never goes on an invoice. Use when asked to draft or update a job ticket, invoice line, or repair write-up from a tech's notes. Drafts the lines; the technician approves the price."
+license: MIT
 ---
 
 # The field ticket
@@ -17,7 +18,7 @@ Findings belong on the customer-visible service line, in plain words, in this or
 
 ## One line per thing, and a parts line says only what the part is
 
-The labor line carries the write-up and the labor price, and says whether the diagnostic fee is included. Each part gets its own line: the part's plain name and its part number, nothing else. No retail price, no tax, no shipping arithmetic, no supplier name on the customer's invoice.
+The labor line carries the write-up and the labor price, and says whether the diagnostic fee is included. Each part gets its own line: the part's plain name and its part number, nothing else. A part line's description shows no price math: no retail price, no shipping arithmetic, no supplier name. Sales tax goes on the invoice as the state requires.
 
 **What went wrong, 2026-09-12 and 2026-09-30:** a parts line that showed the math behind the price invited the customer to redo the math. The rule became "name and number only," ruled twice.
 
@@ -29,7 +30,7 @@ The technician gives the labor price, or the convention the shop uses. Part pric
 
 ## Look the part up, and say where
 
-When a part is needed, find it on the model's own parts list at a parts site that carries the manufacturer's diagrams, confirm it fits that model, and name the source and the retail price in the message to the technician, not on the invoice. When the exact model cannot be found, say which sibling model the number was confirmed on. When two part numbers exist (an original and a replacement), use the current one and say what it replaces.
+When a part is needed, go to the supplier the shop actually buys from, find the part on the model's own parts list there, confirm it fits that model, and name that supplier and its price in the message to the technician, not on the invoice. A manufacturer's diagram can help you find the number; its retail price never sets the price. When the exact model cannot be found, say which sibling model the number was confirmed on. When two part numbers exist (an original and a replacement), use the current one and say what it replaces.
 
 ## Verification is a sentence, not a word
 
@@ -39,7 +40,7 @@ When a part is needed, find it on the model's own parts list at a parts site tha
 
 The technician's private opinions of the customer or the house. Other customers' names. Supplier prices. Guesses dressed as findings. A model number read off a blurry tag without saying it was read off a blurry tag.
 
-**What went wrong, 2026-10-06:** a note about the condition of a home was needed for the technician's own safety on a return visit. It went in a private note, on his word, and nowhere a customer reads.
+**What went wrong:** a note about the condition of a home was needed for the technician's own safety on a return visit. It went in a private note, on his word, and nowhere a customer reads.
 
 ## Warranty and referrals
 

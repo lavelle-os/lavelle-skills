@@ -1,6 +1,7 @@
 ---
 name: business-license-research
 description: How an agent researches every license, registration, permit, tax account and insurance requirement for a new home-service business in a given state, county (or parish or borough) and city, from official sources only, and hands the owner a checklist to act on. Use when someone says they want to start a trade or home-service business and names, or can name, where. The agent researches and drafts; the owner files; a preparer or attorney gets the second look.
+license: MIT
 ---
 
 # Business license research

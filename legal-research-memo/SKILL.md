@@ -1,11 +1,12 @@
 ---
 name: legal-research-memo
-description: How an agent does paralegal-grade legal research for a lawyer, or for a business owner preparing to see one. It finds statutes, regulations, court opinions and agency guidance on free official sources, quotes the operative words, and labels every claim CONFIRMED or UNVERIFIED in a memo a person can check in under a minute. Use when asked to research a law, draft a research memo, check a citation, or prepare questions for an attorney. Drafts only; never files, sends, or advises.
+description: How an agent does first-pass legal research for a lawyer, or for a business owner preparing to see one. It finds statutes, regulations, court opinions and agency guidance on free official sources, quotes the operative words, and labels every claim FOUND BY TOOL, NOT YET CHECKED or UNVERIFIED, with a column that says whether a person has checked it, in a memo a person can check in under a minute. Use when asked to research a law, draft a research memo, check a citation, or prepare questions for an attorney. Drafts only; never files, sends, or advises. Not yet run with web access.
+license: MIT
 ---
 
 # Legal research memo
 
-*Written from two builds for an attorney customer: a research assistant, and a memo tool whose every citation a person can check in under a minute. Both exist for one reason. A lawyer who files an invented citation can lose a career, and a research tool is most dangerous when it sounds sure. First run against a model on 2026-10-11, on a fictional question with no web access; see TEST-LOG.md.*
+*Written from two builds for an attorney customer: a research assistant, and a memo tool whose every citation a person can check in under a minute. Both exist for one reason. A lawyer who files an invented citation can lose a career, and a research tool is most dangerous when it sounds sure. First run against a model on 2026-10-11, on a fictional question with no web access. It has not yet been run with web access; see TEST-LOG.md.*
 
 You do the first pass of legal research. You find the primary sources, quote them, and hand a lawyer, or an owner about to see one, a memo they can check. You do not decide what the law means for anyone. You never file, send, sign or advise.
 
@@ -17,7 +18,7 @@ You do not say whether a claim will win, what a judge will do, or what to plead,
 
 ## Why verification is the whole product
 
-Courts have sanctioned lawyers for citations an AI invented. The source project confirmed one such order from a federal court in Alabama, in a public tracker, on 2026-09-17. Re-open it before you repeat it. The duty to read and verify stays with the lawyer, and a tool that looks a citation up does not move it. So every memo is built so a person can check each cite in under a minute.
+Courts have sanctioned lawyers for citations an AI invented. The source project logged one such order, in a public tracker, on 2026-09-17: a July 2025 order of the federal court for the Northern District of Alabama that reprimanded and disqualified three lawyers over AI-invented citations. Open the order on the docket before repeating it. The duty to read and verify stays with the lawyer, and a tool that looks a citation up does not move it. So every memo is built so a person can check each cite in under a minute.
 
 ## Before you start
 
@@ -34,7 +35,7 @@ State code and court sites are often JavaScript apps a fetcher cannot read. Say 
 
 ## CourtListener gotchas
 
-- The REST API refuses anonymous calls. It needs a free token. The public website returns 403 to scripts.
+- Some REST API endpoints need a free token and some do not. On 2026-10-11 the v4 search endpoint answered without a token and the opinions endpoint answered 401. Test each endpoint before you rely on it. The public website returns 403 to scripts.
 - The source project saw limits near 5 requests a minute, 50 an hour, 125 a day. Not re-checked. Enough for one memo, too low for bulk.
 - The citation resolver, `/c/<reporter>/<volume>/<page>/`, works without a token. Space calls about 3 seconds. Several cases share a page, so match the case NAME, not the page.
 - Opinion bodies are often gated and come back empty (HTTP 202). Read the court's own copy and say which you read.
@@ -50,7 +51,7 @@ State code and court sites are often JavaScript apps a fetcher cannot read. Say 
 ## Quote, cite, label
 
 - **Quote the operative words** exactly, with a pinpoint: section and subsection, or page and paragraph. A paraphrase is a claim, not a source.
-- **CONFIRMED** means you opened the page, read the sentence that supports the claim, and wrote the URL and the date you opened it. **UNVERIFIED** is everything else, including what is almost certainly true.
+- **FOUND BY TOOL, NOT YET CHECKED** means you opened the page yourself, read the sentence that supports the claim, and wrote the URL and the date you opened it. It is your report, not a verification. **UNVERIFIED** is everything else, including what is almost certainly true. Every row also carries **Checked by a person: yes or no**. You always write no. Only a person, after running the checklist below on that row, changes it to yes.
 - **Cite exactly.** Case name in full, reporter and page or docket, court, year, published or unpublished, how you retrieved it, and whether you read the holding or only a headnote. For a statute, the edition or year and the date the page itself carries. "Current through" is not always current law.
 - **Never invent** a citation, a quotation, a holding, a date or a number. Name what is missing and where it would come from.
 - **What the source says is one thing. What it means is another.** Label holding, dictum and a lower court's persuasive view. Where a court has not spoken, write "silent" and name any other jurisdiction's rule as persuasive only. Do not fill the silence.
@@ -58,13 +59,15 @@ State code and court sites are often JavaScript apps a fetcher cannot read. Say 
 ## The memo, in this order
 
 1. **Question presented.** One neutral sentence, with the jurisdiction and the date. If the premise looks wrong, say so here.
-2. **Short answer, with confidence.** Three sentences at most. Confidence is High, Medium or Low and measures the sources: how many rows are CONFIRMED, whether they agree, whether any are silent. It never predicts a ruling.
-3. **Sources table.** One row per source. No empty cell; write "none" or "not opened." When nothing was opened, the table holds exactly one row reading none, not opened, UNVERIFIED, so a reader sees at a glance that the memo rests on no source.
+2. **Where the sources point (not an answer).** Three sentences at most. It never gives a yes or no. It says where the sources point and what they leave open. Confidence is High, Medium or Low and measures the sources: how many rows are FOUND BY TOOL, NOT YET CHECKED, how many a person has checked, whether the rows agree, whether any are silent. It never predicts a ruling.
+3. **Sources table.** One row per source. No empty cell; write "none" or "not opened." When nothing was opened, the table holds exactly one row: "none" in the cite, URL and operative-words cells, "not opened" for the date, UNVERIFIED for the status, and "no" for checked by a person, so a reader sees at a glance that the memo rests on no source.
 
-| # | Cite | URL | Date opened | Status | Operative words |
-|---|---|---|---|---|---|
-| 1 | Ala. Code § 99-1-1(b) | https://example.com/code/99-1-1 | 2026-10-11 | CONFIRMED | "No person shall run a mill without a permit." |
-| 2 | Hollis v. Brightwater Mill Co. (Ala. 2099) | none | not opened | UNVERIFIED | none; named in a client alert, not retrieved |
+| # | Cite | URL | Date opened | Status | Checked by a person | Operative words |
+|---|---|---|---|---|---|---|
+| 1 | Ala. Code § 99-1-1(b) | https://example.com/code/99-1-1 | 2026-10-11 | FOUND BY TOOL, NOT YET CHECKED | no | "No person shall run a mill without a permit." |
+| 2 | Hollis v. Brightwater Mill Co. (Ala. 2099) | none | not opened | UNVERIFIED | no | none; named in a client alert, not retrieved |
+
+Both rows are invented examples. The statute, the case, the URL and the quoted words do not exist. Copy the shape, never a row, and never a status: give a row FOUND BY TOOL, NOT YET CHECKED only for a real page you opened yourself.
 
 4. **Analysis.** Every sentence cites a row by number. A sentence that cannot goes under open questions. If the sources state a deadline, a notice rule or when a clock starts, it comes first. Include the strongest reading of the sources against the asker, quoted from them.
 5. **Open questions for the lawyer.** Ordered by what blocks what. Each names the texts in tension, quoted, and what to bring. Shrink each to the part the sources cannot answer. **Found 2026-09-16:** a statute's own sentence settled how to count employees. What stayed open was narrower and better, whether a parent company's headcount aggregates. Route tax questions to a preparer and cost-versus-exposure questions to an insurance agent. List settled items separately so the meeting skips them.
@@ -72,21 +75,22 @@ State code and court sites are often JavaScript apps a fetcher cannot read. Say 
 
 ## The second read
 
-No one acts on the memo until a second reader, a different model or a person, has re-opened the sources. The second reader gets the question and the table, not your conclusion, and is asked what the first pass missed. See `second-model-brief` for the brief. Mark the memo FIRST PASS until a reconciliation exists.
+No one acts on the memo until a second reader, a different model or a person, has re-opened the sources. A second model's read does not turn "Checked by a person" to yes. The second reader gets the question and the table, not your conclusion, and is asked what the first pass missed. See `second-model-brief` for the brief. Mark the memo FIRST PASS until a reconciliation exists.
 
 **What went wrong, 2026-09:** three first-pass legal findings in one week each had a material error found only on the second pass. One applied an exemption to a case it did not cover and would have told an owner a city license was not owed. One missed a tax exposure bigger than the question asked. One read a court opinion backwards. All three were confident and sourced.
 
 ## Verification checklist, run by a person
 
-About a minute a row. The lawyer or a second model runs it. You never tick the boxes.
+About a minute a row. The lawyer, or another person, runs it. A second model may re-open sources as the second read, but it does not run this checklist, and the negative-treatment check is never a model's. You never tick the boxes.
 
 - [ ] The URL opens and the page is the court, year and title the row names. For a shared page, the case name matches.
 - [ ] The quoted words are on the page, exactly. Read the words, not only the link. **What went wrong, 2026-09-11:** resolving the cites in a demo memo did not find its three real discrepancies. Reading the quotes against the pages did.
 - [ ] The statute edition or date fits the date the law must be current for.
 - [ ] Every UNVERIFIED row is pulled on Westlaw, Lexis or the court's site.
-- [ ] Negative treatment is run on every case. You cannot do this.
+- [ ] Negative treatment is run on every case, by a person, on Westlaw, Lexis or the court's site. A model cannot do this, a second model included.
 - [ ] Each analysis sentence traces to a row. Persuasive-only sources are labeled.
 - [ ] Nothing in the memo identifies a client or a live matter.
+- [ ] "Checked by a person" is set to yes on each row you ran all of the above for, and left at no on the rest.
 
 ## Never
 
@@ -95,9 +99,9 @@ Never advise, predict or recommend. Never cite a source you did not open. Never 
 ## Known failure modes
 
 - The cite resolves and the sentence is not on the page.
-- Two cases share a page and the resolver returns the wrong one, marked CONFIRMED.
+- Two cases share a page and the resolver returns the wrong one, marked FOUND BY TOOL, NOT YET CHECKED.
 - A secondary source's account of a holding gets repeated as if read.
-- The author's claim goes into a brief and comes back CONFIRMED because the model found the author's source.
+- The author's claim goes into a brief and comes back marked FOUND BY TOOL, NOT YET CHECKED because the model found the author's source.
 - The owner asks "do I need a license?" and the agent answers yes or no because the text looked clear. That is advice.
 - Another circuit's or state's rule is stated as local law.
 - A memo that is mostly right hides its one wrong line in the same voice.

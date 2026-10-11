@@ -1,6 +1,7 @@
 ---
 name: receptionist
 description: Rules for designing a phone receptionist agent that books, moves and cancels appointments on a real calendar for a one-person trade business. Use when asked to design, write the prompt for, or review a voice or chat receptionist for a field-service business. Drafts only; never configures or deploys.
+license: MIT
 ---
 
 # The receptionist
@@ -15,9 +16,9 @@ The owner cannot take the call. That is the entire reason the line exists. Every
 
 ## Intake, in this order
 
-Collect, read back, and confirm: first and last name; the phone number, read back digit by digit; the service address with the zip code, street and zip read back; the appliance or system and the problem in the caller's words; the email, read back at natural pace. One appointment, one two-hour window. Two or three problems in one house get one window and one diagnostic fee; the owner looks at all of them on the visit.
+Ask the problem first, in the caller's words: the appliance or system and what it is doing. Then collect, read back, and confirm: first and last name; the phone number, read back digit by digit; the service address with the zip code, street and zip read back; the email, read back at natural pace. One appointment, one two-hour window. Two or three problems in one house get one window and one diagnostic fee; the owner looks at all of them on the visit.
 
-**What went wrong, 2026-09:** the agent booked two windows for a caller with two appliances and quoted two fees. The rule above came from that call.
+**What went wrong, 2026-09:** the agent booked two windows for a caller with two appliances and quoted two fees. The rule above came from that call. **Found 2026-10-11:** a test agent reading this file reported that an intake order with the problem fourth conflicts with the lookup rule below, which starts when the caller says what they need. The problem now comes first.
 
 ## Recognize the caller before anything else
 
@@ -25,7 +26,7 @@ If the phone system passes a caller ID, the first tool call on the call is a cus
 
 If the lookup finds nothing and the caller says the owner has been out before, ask: "What number would the owner have on file for you?" and look that up before treating them as new.
 
-**What went wrong, 2026-10-06:** a caller with three prior visits was asked what part of town she lived in. **What went wrong, 2026-10-07:** the business's booking system had created a second customer record for a caller who booked online with her name typed differently; the agent found the first record, saw no appointment on it, and told her she had none. The fix was code, not prompt: every lookup of a caller's appointments now reads every customer record that carries the number. Tell the programmer this one, because it will happen to them.
+**What went wrong:** a caller with three prior visits was asked what part of town they lived in. **What went wrong another time:** the business's booking system had created a second customer record for a caller who booked online with the name typed differently; the agent found the first record, saw no appointment on it, and told the caller they had none. The fix was code, not prompt: every lookup of a caller's appointments now reads every customer record that carries the number. Tell the programmer this one, because it will happen to them.
 
 ## Service area is a tool's answer, not the model's opinion
 
@@ -49,7 +50,7 @@ When a caller cancels, ask the reason once ("did you get it fixed, or just no lo
 
 ## Emergencies skip the queue
 
-Every trade has calls that cannot wait for the fourth ask: for a plumber an active leak, a sewage backup, no water; for an electrician a burning smell or sparks; for a gas appliance any gas smell. The owner writes the list for their trade, and the agent treats a call on that list differently: safety line first ("please leave the house and call the gas company or 911 from outside"), then name and number, then the transfer or the owner's emergency number without counting asks. The agent never invents the list or the safety line; both are the owner's words, approved before the line goes live, because they carry liability.
+Every trade has calls that cannot wait for the fourth ask: for a plumber an active leak, a sewage backup, no water; for an electrician a burning smell or sparks; for a gas appliance any gas smell. The owner writes the list for their trade, and the agent treats a call on that list differently: the owner's safety line first, then name and number, then the transfer or the owner's emergency number without counting asks. For a gas shop that line might read, in the owner's words, "please leave the house and call the gas company or 911 from outside." That is the owner's example, not text for the agent to use. The agent never writes its own list or its own safety line; both are the owner's words, approved before the line goes live, because they carry liability.
 
 **What went wrong, 2026-10-07:** the first outside test of this skill, an agent drafting for a fictional plumber, found that the appliance rules had no urgent path at all. A caller standing in water who has to ask four times for a human calls someone else. The rule above was written the same evening; the list and the safety line stay the owner's.
 
