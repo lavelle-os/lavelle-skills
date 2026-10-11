@@ -1,6 +1,6 @@
 # Lavelle skills
 
-*Rules one small business learned by running agents in front of real customers, packaged as files any coding agent can read. Private until each skill passes the gate. A skill that has not been tested is a draft with a header on it.*
+*Rules one small business learned by running agents in front of real customers, packaged as files any coding agent can read. Public since 2026-10-11: each skill passed the gate and a run against a model before the flip, and the table says what was run on each. A skill that has not been tested is a draft with a header on it.*
 
 **Read this first:** a skill is prose. It instructs an agent; it does not run anything. Every skill here tells the agent to draft and show, never to apply. If your agent applies a draft anyway, that is your harness's permission setting, and this repository cannot fix it.
 
