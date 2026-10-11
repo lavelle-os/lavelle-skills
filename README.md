@@ -1,6 +1,6 @@
 # Lavelle skills
 
-*Rules one small business learned by running agents in front of real customers, packaged as files any coding agent can read. Private until each skill passes the gate. Last verified 2026-10-07.*
+*Rules one small business learned by running agents in front of real customers, packaged as files any coding agent can read. Private until each skill passes the gate. **Two of the seven skills have been run against a model and written up; five have not. The table says which.** A skill that has not been tested is a draft with a header on it.*
 
 **Read this first:** a skill is prose. It instructs an agent; it does not run anything. Every skill here tells the agent to draft and show, never to apply. If your agent applies a draft anyway, that is your harness's permission setting, and this repository cannot fix it.
 
@@ -12,15 +12,15 @@ Every rule carries the incident that produced it, dated when the date is known, 
 
 ## Skills in the box
 
-| Skill | What it is for |
-|---|---|
-| [receptionist](receptionist/SKILL.md) | A phone receptionist that books on a real calendar for a trade business: intake, recognition, service area, cancellations, what it may never say. |
-| [honest-tutor](honest-tutor/SKILL.md) | A tutor for a subject where sources matter and the student will go on to teach others: one idea at a time, say it back, never invent, say what the model cannot compute. |
-| [second-model-brief](second-model-brief/SKILL.md) | How to brief a second AI model, read its memo back against the sources, and reconcile it before anyone acts. |
-| [resale-identification](resale-identification/SKILL.md) | Identify used furniture and household goods from phone photos, say what they tend to sell for, draft the listing; photo versus in hand; never a value as fact. |
-| [field-ticket](field-ticket/SKILL.md) | Turn a technician's spoken findings into the ticket the customer reads: the visible write-up, parts lines that say only what the part is, prices the technician owns. |
-| [starting-a-home-service-business](starting-a-home-service-business/SKILL.md) | The eleven steps for a one-person home-service business, in order, each with a "done when" and the line between what an agent does and what the owner must do. |
-| [business-license-research](business-license-research/SKILL.md) | Research every license, registration, tax account and insurance requirement for a given state, county or parish, and city, from official sources only, as a checklist the owner acts on after a second read. |
+| Skill | What it is for | Last tested |
+|---|---|---|
+| [receptionist](receptionist/SKILL.md) | A phone receptionist that books on a real calendar for a trade business: intake, recognition, service area, cancellations, what it may never say. | 2026-10-07, twice: the Claude app with the skill pasted, then a smaller model reading it from disk |
+| [honest-tutor](honest-tutor/SKILL.md) | A tutor for a subject where sources matter and the student will go on to teach others: one idea at a time, say it back, never invent, say what the model cannot compute. | **not tested** |
+| [second-model-brief](second-model-brief/SKILL.md) | How to brief a second AI model, read its memo back against the sources, and reconcile it before anyone acts. | **not tested** |
+| [resale-identification](resale-identification/SKILL.md) | Identify used furniture and household goods from phone photos, say what they tend to sell for, draft the listing; photo versus in hand; never a value as fact. | **not tested** |
+| [field-ticket](field-ticket/SKILL.md) | Turn a technician's spoken findings into the ticket the customer reads: the visible write-up, parts lines that say only what the part is, prices the technician owns. | **not tested** |
+| [starting-a-home-service-business](starting-a-home-service-business/SKILL.md) | The eleven steps for a one-person home-service business, in order, each with a "done when" and the line between what an agent does and what the owner must do. | **not tested** |
+| [business-license-research](business-license-research/SKILL.md) | Research every license, registration, tax account and insurance requirement for a given state, county or parish, and city, from official sources only, as a checklist the owner acts on after a second read. | 2026-10-09, twice: a smaller model from disk, then the same model on a real state with the web on |
 
 ## Install
 
