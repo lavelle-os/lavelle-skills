@@ -6,7 +6,7 @@
 
 ## What this is
 
-A skill is one folder with a `SKILL.md` inside. The file has a short header the agent reads to decide when the skill applies, then the rules. Claude Code, Codex, Hermes, Pi and Omarchy's agent launcher all read skills from the same kind of folder, so one file works wherever the agent runs. These are the rules behind the agents described in the Lavelle notes, rewritten so a programmer can hand them to their own agent and build the same thing for a different business.
+A skill is one folder with a `SKILL.md` inside. The file has a short header the agent reads to decide when the skill applies, then the rules. Claude Code reads skills from a folder of this shape, and other agents that follow the Agent Skills convention read the same shape from a shared folder, so one file works in more than one place; check your agent's own documentation for where it looks. These are the rules behind the agents described in the Lavelle notes, rewritten so a programmer can hand them to their own agent and build the same thing for a different business.
 
 Every rule carries the incident that produced it, dated when the date is known, with the customer taken out. A rule with no incident under it is suspect, and the file says so.
 
@@ -24,7 +24,7 @@ Every rule carries the incident that produced it, dated when the date is known, 
 
 ## Install
 
-Clone the folder of the skill you want into your agent's skills directory. Claude Code reads `~/.claude/skills/<name>/SKILL.md`; the shared location most harnesses now read is `~/.agents/skills/<name>/SKILL.md`. Omarchy symlinks both.
+Clone the folder of the skill you want into your agent's skills directory. Claude Code reads `~/.claude/skills/<name>/SKILL.md`; agents that follow the Agent Skills convention read `~/.agents/skills/<name>/SKILL.md`. Link the folder into whichever your agent reads.
 
 ```
 git clone <this repository> ~/lavelle-skills
