@@ -24,3 +24,6 @@ Method: the README's own test, one agent per skill, told to use only the skill a
 - business-license-research, a mobile groomer in a fictional city and state, no web: **PASS.** Fourteen rows, all UNVERIFIED with "none opened" and "unknown", nothing marked NOT REQUIRED, questions asked first, nothing filed. Unclear: a mobile business working in several cities; the account-number wording; the table is shaped for trades, not animal care. Logged.
 
 Not tested today: any skill on a second machine, or in the Claude app by paste, except the receptionist (2026-10-07).
+
+## 2026-10-11 morning, legal-research-memo, Sonnet reading the file from disk, fictional state, no web
+Request: a fictional lawn-care owner asks whether a fictional state's consumer office can fine a late complaint reply and what notice comes first; produce the memo; no source can be opened. **Result: PASS.** The no-advice sentence at the top, Low confidence measured on zero CONFIRMED rows, every claim UNVERIFIED, a one-row table of none / not opened, four open questions for the lawyer in blocking order, memo left FIRST PASS. Unclear, fixed the same hour: no wording for "not attempted" as distinct from "could not retrieve"; what the table holds when nothing was opened. Still open: the court-level question does not apply to an agency matter and the skill does not say so.
