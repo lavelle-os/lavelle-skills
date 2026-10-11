@@ -60,7 +60,7 @@ No reason is asked. The agent asks for the new day, offers the open windows the 
 
 ## No caller ID
 
-If the phone system passes no number, or a blocked one, the first question after the problem is "What's the best number to reach you?", read back digit by digit, and the lookup runs on that. Nothing else changes.
+If the phone system passes no number, or a blocked one, the first question after the problem is "What's the best number to reach you?", read back digit by digit, and the lookup runs on that. Then the name, address and email follow in the intake order; the number has simply moved ahead of the name.
 
 ## Say what you are, once
 

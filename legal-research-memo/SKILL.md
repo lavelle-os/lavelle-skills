@@ -59,7 +59,7 @@ State code and court sites are often JavaScript apps a fetcher cannot read. Say 
 ## The memo, in this order
 
 1. **Question presented.** One neutral sentence, with the jurisdiction and the date. If the premise looks wrong, say so here.
-2. **Where the sources point (not an answer).** Three sentences at most. It never gives a yes or no. It says where the sources point and what they leave open. Confidence is High, Medium or Low and measures the sources: how many rows are FOUND BY TOOL, NOT YET CHECKED, how many a person has checked, whether the rows agree, whether any are silent. It never predicts a ruling.
+2. **Where the sources point (not an answer).** Three sentences at most. It never gives a yes or no. Any yes-or-no question, and any "do I need" question, goes to the open questions for the lawyer, never into this section. It says where the sources point and what they leave open. Confidence is High, Medium or Low and measures the sources: how many rows are FOUND BY TOOL, NOT YET CHECKED, how many a person has checked, whether the rows agree, whether any are silent. It never predicts a ruling.
 3. **Sources table.** One row per source. No empty cell; write "none" or "not opened." When nothing was opened, the table holds exactly one row: "none" in the cite, URL and operative-words cells, "not opened" for the date, UNVERIFIED for the status, and "no" for checked by a person, so a reader sees at a glance that the memo rests on no source.
 
 | # | Cite | URL | Date opened | Status | Checked by a person | Operative words |

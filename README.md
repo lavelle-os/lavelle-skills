@@ -52,7 +52,7 @@ No customer data, no phone numbers, no addresses, no system prompts of a live ag
 
 ## License
 
-MIT, in `LICENSE`. The copyright holder is The Morriss Group LLC, as the `LICENSE` file says.
+MIT, in `LICENSE`. The copyright holder is The Morriss Group LLC, as the `LICENSE` file says. The license covers these files as documentation. It does not warrant the accuracy of any rule, and it grants no rights in any name.
 
 ## Starting yours
 
