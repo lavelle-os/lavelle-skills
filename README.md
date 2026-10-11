@@ -25,7 +25,7 @@ Every rule carries the incident that produced it, dated when the date is known, 
 
 ## Install
 
-Clone the folder of the skill you want into your agent's skills directory. Claude Code reads `~/.claude/skills/<name>/SKILL.md`; agents that follow the Agent Skills convention read `~/.agents/skills/<name>/SKILL.md`. Link the folder into whichever your agent reads.
+Clone the folder of the skill you want into your agent's skills directory. Claude Code reads `~/.claude/skills/<name>/SKILL.md`; agents that follow the Agent Skills convention read `~/.agents/skills/<name>/SKILL.md`. Link the folder into whichever your agent reads. Omarchy ships Claude Code and OpenCode with pre-wired launchers for the other major coding-agent CLIs, and its own system skill is read by Claude Code and "any other harness that supports `~/.claude/skills`" (the Omarchy manual's AI page, opened 2026-10-11), so these skills drop into that same folder on an Omarchy machine; not yet run there.
 
 ```
 git clone <this repository> ~/lavelle-skills
