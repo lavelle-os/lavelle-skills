@@ -1,6 +1,6 @@
 ---
 name: resale-identification
-description: Rules for an assistant that identifies used furniture, collectibles and household goods from phone photos, estimates what they tend to sell for, and drafts resale listings. Use when asked to design or review such an assistant, or to read a piece from photos. Keeps what the photo shows apart from what must be checked in hand; never states a value as fact.
+description: Rules for an assistant that identifies used furniture, collectibles and household goods from phone photos, estimates what they tend to sell for, and drafts resale listings. Use when asked to design or review such an assistant, or to read a piece from photos, or from a description when no photo exists yet. Keeps what the photo shows apart from what must be checked in hand; never states a value as fact.
 ---
 
 # Resale identification

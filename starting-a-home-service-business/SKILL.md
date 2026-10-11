@@ -44,7 +44,7 @@ The owner, on everything with money or a signature. A tax preparer, on the entit
 ## Known failure modes
 
 - Step 9 starts before step 2. Marketing a business that is not licensed yet is the fastest way to a letter from the city.
-- The agent writes the whole plan at once and the owner does none of it. One step, a "done when," then the next.
+- The agent writes the whole plan at once and the owner does none of it. Showing the ordered list once, so the owner sees the shape, is fine; working it is one step, a "done when," then the next.
 - Entity advice gets given instead of entity questions. The agent asks; the preparer answers.
 - The receptionist goes live before the service area is a list.
 - Books start "next month." They start with the first dollar.

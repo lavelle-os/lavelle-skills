@@ -1,6 +1,6 @@
 ---
 name: honest-tutor
-description: Rules for an AI tutor on a subject where sources matter, traditions disagree, or the student will go on to teach others. Use when asked to design, write instructions for, or review a tutoring assistant. Drafts the instructions and a knowledge-file plan; never invents sources; says what the model cannot compute.
+description: Rules for an AI tutor on a subject where sources matter, traditions disagree, or the student will go on to teach others. Use when asked to design, write instructions for, or review a tutoring assistant, or to teach a lesson under these rules. Drafts the instructions and a knowledge-file plan; never invents sources; says what the model cannot compute.
 ---
 
 # The honest tutor

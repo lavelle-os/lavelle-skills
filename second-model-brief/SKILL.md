@@ -53,4 +53,4 @@ Beside every memo, a file with: what was re-opened and what it showed; where the
 1. Write the title line and the rules of evidence before the questions.
 2. State what you already believe, so the model has something to correct.
 3. Put "argue against" in every brief, no exceptions.
-4. The first thing that will go wrong: you will act on the memo's ten sentences before reading the reconciliation, because the ten sentences are good. Write the reconciliation first.
+4. The first thing that will go wrong: you will act on the memo's ten sentences before reading the reconciliation, because the ten sentences are good. Set up the reconciliation file and its checklist before the memo arrives, and fill it in as you re-open the sources.
