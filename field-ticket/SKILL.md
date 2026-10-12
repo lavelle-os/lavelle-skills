@@ -16,6 +16,12 @@ Findings belong on the customer-visible service line, in plain words, in this or
 
 **What went wrong, 2026-09:** findings written as private notes left the customer with an invoice that said "Dishwasher" and a number. The customer could not see what they paid for. Every finding moved to the visible line.
 
+## The write-up is sections, never a paragraph
+
+The customer-visible write-up is broken into short labeled sections with line breaks, in this order, each heading in capitals and each point a one-line bullet: the machine line (make, model, serial, year), WHAT I FOUND, WHAT THE REPAIR WOULD COST, MY RECOMMENDATION, and, when replacement is the recommendation, REPLACEMENTS THAT FIT THIS SPACE (the unit's own measurements first, then numbered models with their color suffixes, a size note where one differs, and a listed price range) and WHERE TO BUY (stores, delivery, haul-away at checkout). Drop a section that does not apply. Never collapse the rest into prose.
+
+**What went wrong, 2026-10-12:** a quote for a landlord was written as one long paragraph with everything in it. The owner had it rewritten into sections and said it was much easier for people to read. The paragraph had the same facts; nobody could find them.
+
 ## One line per thing, and a parts line says only what the part is
 
 The labor line carries the write-up and the labor price, and says whether the diagnostic fee is included. Each part gets its own line: the part's plain name and its part number, nothing else. A part line's description shows no price math: no retail price, no shipping arithmetic, no supplier name. Sales tax goes on the invoice as the state requires.
