@@ -30,7 +30,7 @@ The labor line carries the write-up and the labor price, and says whether the di
 
 ## Prices are the technician's, rounded
 
-The technician gives the labor price, or the convention the shop uses. Part prices follow the shop's rule (ours: the supplier's retail price times 1.10, plus $15 for shipping, rounded to the nearest five dollars; retail is read from the two suppliers the shop actually buys from, never from a manufacturer's site). Every line is rounded to the nearest five. If the technician did not give a price, the line keeps the price it had and the agent says so; it does not guess.
+The technician gives the labor price, or the convention the shop uses. Part prices follow the shop's rule (ours: the supplier's retail price times 1.10, plus $15 for shipping, rounded to the nearest five dollars; retail is read from the two suppliers the shop actually buys from, never from a manufacturer's site). Every line is rounded to the nearest five. If the technician did not give a price, the line keeps the price it had and the agent says so; it does not guess. A new line that has no price yet stays blank, with the words "price not given by the technician", until the technician gives one.
 
 **What went wrong, 2026-10-07:** a ticket was written at the diagnostic price because the technician forgot to say the labor; he had already changed it himself by the time the agent asked. The agent's write-up survived underneath his price because the agent changed only the fields it was told to.
 

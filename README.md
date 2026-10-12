@@ -25,7 +25,7 @@ Every rule carries the incident that produced it, dated when the date is known, 
 
 ## Install
 
-The Agent Skills spec defines the file, not where it lives. Claude Code reads `~/.claude/skills`; Codex reads `~/.agents/skills`; OpenCode reads both. Omarchy's manual says its skill is configured in OpenCode and Claude Code through `~/.claude/skills` (AI page, opened 2026-10-11). Link these there. Run on Omarchy 4.0.4 in a virtual machine on 2026-10-12: the Claude Code that Omarchy installs (2.1.296) read the box from `~/.claude/skills` and all eight skills held; the entry in TEST-LOG.md has what the machine needed first.
+The Agent Skills spec defines the file, not where it lives. Claude Code reads `~/.claude/skills`; Codex reads `~/.agents/skills`; OpenCode reads both. Confirm the folder in your agent's current documentation before linking. Omarchy's manual says its skill is configured in OpenCode and Claude Code through `~/.claude/skills` (AI page, opened 2026-10-11). Link these there. Run on Omarchy 4.0.4 in a virtual machine on 2026-10-12: the Claude Code that Omarchy installs (2.1.296) read the box from `~/.claude/skills` and all eight skills held; the entry in TEST-LOG.md has what the machine needed first.
 
 Paste this into a terminal. It copies the repository once and links all eight skill folders into both skills folders, so it works for any of the three agents.
 
