@@ -18,7 +18,9 @@ Findings belong on the customer-visible service line, in plain words, in this or
 
 ## The write-up is sections, never a paragraph
 
-The customer-visible write-up is broken into short labeled sections with line breaks, in this order, each heading in capitals and each point a one-line bullet: the machine line (make, model, serial, year), WHAT I FOUND, WHAT THE REPAIR WOULD COST, MY RECOMMENDATION, and, when replacement is the recommendation, REPLACEMENTS THAT FIT THIS SPACE (the unit's own measurements first, then numbered models with their color suffixes, a size note where one differs, and a listed price range) and WHERE TO BUY (stores, delivery, haul-away at checkout). Drop a section that does not apply. Never collapse the rest into prose.
+The customer-visible write-up is broken into short labeled sections with line breaks, each heading in capitals and each point a one-line bullet. The sections carry the order above. A finished repair: the machine line (make, model, serial, year), WHAT I FOUND, WHAT I DID, WHAT THE REPAIR COSTS. A diagnostic or a quote: the machine line, WHAT I FOUND, WHAT THE REPAIR WOULD COST, MY RECOMMENDATION, and, when replacement is the recommendation, REPLACEMENTS THAT FIT THIS SPACE (the unit's own measurements first, then numbered models with their color suffixes, a size note where one differs, and a listed price range) and WHERE TO BUY (stores, delivery, haul-away at checkout). Every dollar figure in a section is one the technician gave. Drop a section that does not apply. Never collapse the rest into prose.
+
+**Also 2026-10-12:** on a finished repair the owner had the recommendation and next-steps sections taken off; they belong to a quote, where the advice is the thing being sold.
 
 **What went wrong, 2026-10-12:** a quote for a landlord was written as one long paragraph with everything in it. The owner had it rewritten into sections and said it was much easier for people to read. The paragraph had the same facts; nobody could find them.
 
