@@ -12,7 +12,7 @@ Most rules carry the incident that produced them, dated when the date is known, 
 
 ## Skills in the box
 
-PASS in the table means one run, graded by the author's own AI against the file; the prompts are in TEST-LOG.md. In most runs the prompt also stated the key rule. The two research skills were also run with a bare prompt, the rules coming only from the file, and held.
+PASS in the table means one run, graded by the author's own AI against the file; the prompts are in TEST-LOG.md. In most runs the prompt also stated the key rule. On 2026-10-12 evening all eight were also run with a bare prompt, the rules coming only from the file: six held, two broke (the tutor gave numbers from memory; the brief skill ran the check itself on a model of its own family), and both were fixed and re-run the same hour. TEST-LOG.md has each one.
 
 | Skill | What it is for | Last tested |
 |---|---|---|
@@ -44,7 +44,7 @@ Nobody has run this on Windows. Copying the eight folders into the skills folder
 
 ## The one test
 
-Open your agent. Ask it: "Using the receptionist skill, draft the booking rules and the intake script for a fictional plumber in a fictional town. Show me the draft. Do not create, configure or deploy anything." Read what comes back against the skill. Then do the same on a second machine, or in the Claude app, where a skill can be pasted into the conversation or added through the app's own skills setting instead of installed from disk. As of 2026-10-12, every skill has run from disk on at least two machines (a Mac, and an Omarchy virtual machine that installed the box from this public repository); the receptionist and the legal memo also on an Ubuntu server, and the receptionist in the Claude app by paste. What is still owed is a run under an agent other than Claude Code.
+Open your agent. Ask it: "Using the receptionist skill, draft the booking rules and the intake script for a fictional plumber in a fictional town. Show me the draft. Do not create, configure or deploy anything." Read what comes back against the skill. Then do the same on a second machine, or in the Claude app, where a skill can be pasted into the conversation or added through the app's own skills setting instead of installed from disk. As of 2026-10-12, every skill has run from disk on at least two machines (a Mac, and an Omarchy virtual machine that installed the box from this public repository); the receptionist and the legal memo also on an Ubuntu server, and the receptionist in the Claude app by paste. What is still owed is a run under an agent other than Claude Code; OpenCode 1.19.0 ships on Omarchy and has not been signed in.
 
 Stop if the skill only works in one place, or if the agent builds instead of drafting.
 
