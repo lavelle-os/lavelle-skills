@@ -42,6 +42,8 @@ done
 
 Nobody has run this on Windows. Copying the eight folders into the skills folder under your user profile is the simplest path there.
 
+The skills folder is a clone of this repository, so keep your agent from writing inside it. OpenCode's default agent writes files without asking: in the 2026-10-12 run it saved drafts to disk, one of them inside a skill's own folder. Use a read-only agent mode, or check what it wrote before you pull updates.
+
 ## The one test
 
 Open your agent. Ask it: "Using the receptionist skill, draft the booking rules and the intake script for a fictional plumber in a fictional town. Show me the draft. Do not create, configure or deploy anything." Read what comes back against the skill. Then do the same on a second machine, or in the Claude app, where a skill can be pasted into the conversation or added through the app's own skills setting instead of installed from disk. As of 2026-10-12, every skill has run from disk on at least two machines (a Mac, and an Omarchy virtual machine that installed the box from this public repository); the receptionist and the legal memo also on an Ubuntu server, and the receptionist in the Claude app by paste. What is still owed is a run under an agent other than Claude Code; OpenCode 1.19.0 ships on Omarchy and has not been signed in.
