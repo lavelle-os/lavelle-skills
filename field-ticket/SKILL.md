@@ -42,7 +42,7 @@ When a part is needed, go to the supplier the shop actually buys from, find the 
 
 ## Verification is a sentence, not a word
 
-"Ran a cycle; filled, washed, drained, spun; no leak" is a verification. "Works" is not. If the technician did not say what was tested, ask once; if no answer, write what was done and leave verification out rather than invent it.
+If the technician says "ran a cycle; filled, washed, drained, spun; no leak," that is a verification, in the technician's words. "Works" is not. Never write checks the technician did not name. If the technician did not say what was tested, ask once; if no answer, write what was done and leave verification out rather than invent it.
 
 ## What never goes on the ticket
 
