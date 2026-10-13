@@ -4,6 +4,8 @@
 
 **Read this first:** a skill is prose. It instructs an agent; it does not run anything. Every skill here tells the agent to draft and show, never to apply. If your agent applies a draft anyway, that is your harness's permission setting, and this repository cannot fix it.
 
+**No terminal?** Open a skill's `SKILL.md` on this page, copy all of it into your chat app, and ask for a draft. The receptionist was run that way in the Claude app on 2026-10-07. Nothing below the Install heading is needed for that.
+
 ## What this is
 
 A skill is one folder with a `SKILL.md` inside. The file has a short header the agent reads to decide when the skill applies, then the rules. The Agent Skills spec defines the file, not where it lives, so check your agent's own documentation for where it looks; the Install section says where the three agents we know of look. These are the rules behind the agents described in the Lavelle notes, rewritten so a programmer can hand them to their own agent and build the same thing for a different business.
@@ -29,7 +31,7 @@ PASS in the table means one run, graded by the author's own AI against the file;
 
 The Agent Skills spec defines the file, not where it lives. Claude Code reads `~/.claude/skills`; Codex reads `~/.agents/skills`; OpenCode reads both. Confirm the folder in your agent's current documentation before linking. Omarchy's manual says its skill is configured in OpenCode and Claude Code through `~/.claude/skills` (AI page, opened 2026-10-11). Link these there. Run on Omarchy (the 4.0.4 ISO) in a virtual machine on 2026-10-12: Claude Code 2.1.296, present on the installed system, read the box from `~/.claude/skills` and all eight skills held; the entry in TEST-LOG.md has what the machine needed first.
 
-Paste this into a terminal. It copies the repository once and links all eight skill folders into both skills folders, It has been run only under Claude Code; the links for Codex and OpenCode follow their documentation and have not been tried.
+Paste this into a terminal. It copies the repository once and links all eight skill folders into both skills folders. It has been run under Claude Code and OpenCode; the link for Codex follows its documentation and has not been tried.
 
 ```
 git clone https://github.com/lavelle-os/lavelle-skills ~/lavelle-skills
@@ -43,6 +45,8 @@ done
 Nobody has run this on Windows. Copying the eight folders into the skills folder under your user profile is the simplest path there.
 
 The skills folder is a clone of this repository, so keep your agent from writing inside it. OpenCode's default agent writes files without asking: in the 2026-10-12 run it saved drafts to disk, one of them inside a skill's own folder. Use a read-only agent mode, or check what it wrote before you pull updates.
+
+A `git pull` changes what your agent reads the next time it starts, with no other step. Read the change first: `git -C ~/lavelle-skills fetch && git -C ~/lavelle-skills log -p HEAD..origin/main`, then pull.
 
 ## The one test
 
