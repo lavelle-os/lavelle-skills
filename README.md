@@ -1,37 +1,14 @@
 # Lavelle skills
 
-*Rules one small business learned from its own work, most of them by running agents in front of real customers, packaged as files any coding agent can read. Public since 2026-10-11: each skill passed the gate and a run against a model before the flip, and the table says what was run on each. A skill that has not been tested is a draft with a header on it.*
+Eight rules files from a one-truck appliance repair shop in Alabama that runs on AI agents. Each one tells an agent how to do one job the way my shop does it, and most rules are there because something went wrong without them. I'm the owner, I don't write code, and these are what I learned.
 
-**Read this first:** a skill is prose. It instructs an agent; it does not run anything. Every skill here tells the agent to draft and show, never to apply. If your agent applies a draft anyway, that is your harness's permission setting, and this repository cannot fix it.
+A skill is plain text. It doesn't run anything. Every one tells the agent to draft and show you, never to act on its own.
 
-**No terminal?** Open a skill's `SKILL.md` on this page, copy all of it into your chat app, and ask for a draft. The receptionist was run that way in the Claude app on 2026-10-07. Nothing below the Install heading is needed for that.
+## Try one in two minutes
 
-## What this is
+**No terminal:** open any skill's `SKILL.md` below, copy all of it into your chat app, and ask for a draft.
 
-A skill is one folder with a `SKILL.md` inside. The file has a short header the agent reads to decide when the skill applies, then the rules. The Agent Skills spec defines the file, not where it lives, so check your agent's own documentation for where it looks; the Install section says where the three agents we know of look. These are the rules behind the agents described in the Lavelle notes, rewritten so a programmer can hand them to their own agent and build the same thing for a different business.
-
-Most rules carry the incident that produced them, dated when the date is known, with the customer taken out. A rule with no incident under it has not been earned yet; treat it as a suggestion.
-
-## Skills in the box
-
-PASS in the table means one run, graded by the author's own AI against the file; the prompts are in TEST-LOG.md. In most runs the prompt also stated the key rule. On 2026-10-12 evening all eight were also run with a bare prompt, the rules coming only from the file: six held, two broke (the tutor gave numbers from memory; the brief skill ran the check itself on a model of its own family), and both were fixed and re-run the same hour. TEST-LOG.md has each one.
-
-| Skill | What it is for | Last tested |
-|---|---|---|
-| [receptionist](receptionist/SKILL.md) | A phone receptionist that books on a real calendar for a trade business: intake, recognition, service area, cancellations, what it may never say. | 2026-10-07, twice (once pasted into the Claude app, once from disk); 2026-10-11, Sonnet from disk, fictional plumber: PASS; intake order and after-hours gap logged; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM, cloned from this public repository: PASS, loaded from the VM's own skills folder |
-| [honest-tutor](honest-tutor/SKILL.md) | A tutor for a subject where sources matter and the student will go on to teach others: one idea at a time, say it back, never invent, say what the model cannot compute. | 2026-10-11, Sonnet from disk, one dryer lesson: PASS; trigger widened to teaching directly; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM: PASS, asked first and stopped for the answer, as a one-shot run should; no number given without a source |
-| [second-model-brief](second-model-brief/SKILL.md) | How to brief a second AI model, read its memo back against the sources, and reconcile it before anyone acts. | 2026-10-11, Sonnet from disk, a license question for a fictional club: PASS; "reconciliation first" reworded; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM: PASS, argue-against and a third-reader line in the reconciliation setup, nothing sent |
-| [resale-identification](resale-identification/SKILL.md) | Identify used furniture and household goods from phone photos, say what they tend to sell for, draft the listing; photo versus in hand; never a value as fact. | 2026-10-11, Sonnet from disk, a dresser described in words only: PASS, no value stated as fact; trigger widened to descriptions; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM: PASS, no maker or value as fact; dovetail date ranges stated without a source, logged |
-| [field-ticket](field-ticket/SKILL.md) | Turn a technician's spoken findings into the ticket the customer reads: the visible write-up, parts lines that say only what the part is, prices the technician owns. | 2026-10-11, Sonnet from disk, a dictated washer ticket: PASS; the price rule now states its numbers; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM: PASS, both prices left blank because the technician gave none, part line name and number only (the VM had the file from before the sections rule; that rule has not been run) |
-| [starting-a-home-service-business](starting-a-home-service-business/SKILL.md) | The eleven steps for a one-person home-service business, in order, each with a "done when" and the line between what an agent does and what the owner must do. | 2026-10-11, Sonnet from disk, a fictional handyman in a fictional state: PASS; "whole plan at once" line clarified; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM: PASS, eleven steps with done-when lines, owner and agent split, routed to a preparer |
-| [business-license-research](business-license-research/SKILL.md) | Research every license, registration, tax account and insurance requirement for a given state, county or parish, and city, from official sources only, as a checklist the owner acts on after a second read. | 2026-10-09, twice (fictional parish held; real city, web on, nine CONFIRMED on a first pass, no second reader yet); 2026-10-11, Sonnet from disk, fictional state, no web: PASS, every row UNVERIFIED, nothing invented; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM: PASS, sixteen rows UNVERIFIED and two LATER, nothing NOT REQUIRED; the refrigerant row still carries over from the trades table, logged |
-| [legal-research-memo](legal-research-memo/SKILL.md) | First-pass research for a lawyer, or for an owner about to see one: primary sources on free official sites, operative words quoted, every claim FOUND BY TOOL, NOT YET CHECKED or UNVERIFIED, a memo a person checks in under a minute, never advice. | 2026-10-11, Sonnet from disk, fictional state, no web: PASS, nothing invented, every claim UNVERIFIED, no yes-or-no given; 2026-10-12, Claude (the account's default model) from disk on Omarchy in a VM, no web: PASS, one row with all seven cells, no claim about the law |
-
-## Install
-
-The Agent Skills spec defines the file, not where it lives. Claude Code reads `~/.claude/skills`; Codex reads `~/.agents/skills`; OpenCode reads both. Confirm the folder in your agent's current documentation before linking. Omarchy's manual says its skill is configured in OpenCode and Claude Code through `~/.claude/skills` (AI page, opened 2026-10-11). Link these there. Run on Omarchy (the 4.0.4 ISO) in a virtual machine on 2026-10-12: Claude Code 2.1.296, present on the installed system, read the box from `~/.claude/skills` and all eight skills held; the entry in TEST-LOG.md has what the machine needed first.
-
-Paste this into a terminal. It copies the repository once and links all eight skill folders into both skills folders. It has been run under Claude Code and OpenCode; the link for Codex follows its documentation and has not been tried.
+**With a coding agent:** this copies the repository once and links the eight skills into the folder Claude Code reads (`~/.claude/skills`) and the one OpenCode reads (`~/.agents/skills`). For any other agent, check where its documentation says skills go.
 
 ```
 git clone https://github.com/lavelle-os/lavelle-skills ~/lavelle-skills
@@ -42,29 +19,38 @@ for name in receptionist honest-tutor second-model-brief resale-identification f
 done
 ```
 
-Nobody has run this on Windows. Copying the eight folders into the skills folder under your user profile is the simplest path there.
+Then ask: "Using the receptionist skill, draft the booking rules and the intake script for a fictional plumber. Show me the draft. Don't build anything."
 
-The skills folder is a clone of this repository, so keep your agent from writing inside it. OpenCode's default agent writes files without asking: in the 2026-10-12 run it saved drafts to disk, one of them inside a skill's own folder. Use a read-only agent mode, or check what it wrote before you pull updates.
+## The eight
 
-A `git pull` changes what your agent reads the next time it starts, with no other step. Read the change first: `git -C ~/lavelle-skills fetch && git -C ~/lavelle-skills log -p HEAD..origin/main`, then pull.
+| Skill | What it does |
+|---|---|
+| [receptionist](receptionist/SKILL.md) | Answers a trade business's phone and books on a real calendar. |
+| [field-ticket](field-ticket/SKILL.md) | Turns what the tech says in the driveway into the ticket the customer reads. |
+| [honest-tutor](honest-tutor/SKILL.md) | Teaches one idea at a time and never makes up a number or a source. |
+| [second-model-brief](second-model-brief/SKILL.md) | Writes the brief for a second AI to check the first, and reconciles the answer. |
+| [resale-identification](resale-identification/SKILL.md) | Works out what a used piece of furniture is from photos, without guessing a price. |
+| [starting-a-home-service-business](starting-a-home-service-business/SKILL.md) | The eleven steps to open a one-person service business, in order. |
+| [business-license-research](business-license-research/SKILL.md) | Finds every license and tax account a business needs, from official pages only. |
+| [legal-research-memo](legal-research-memo/SKILL.md) | First-pass legal research a lawyer can check in a minute. Never advice. |
 
-## The one test
+## How they were tested
 
-Open your agent. Ask it: "Using the receptionist skill, draft the booking rules and the intake script for a fictional plumber in a fictional town. Show me the draft. Do not create, configure or deploy anything." Read what comes back against the skill. Then do the same on a second machine, or in the Claude app, where a skill can be pasted into the conversation or added through the app's own skills setting instead of installed from disk. As of 2026-10-12, every skill has run from disk on at least two machines (a Mac, and an Omarchy virtual machine that installed the box from this public repository); the receptionist and the legal memo also on an Ubuntu server, and the receptionist in the Claude app by paste. What is still owed is a run under an agent other than Claude Code; OpenCode 1.19.0 ships on Omarchy and has not been signed in.
+- Under Claude Code on a Mac, an Ubuntu server and a fresh Omarchy 4.0.4 install, and under OpenCode with NVIDIA's free Nemotron model.
+- Every skill loaded on both agents. Under Claude all eight held their rules; asked plainly, without the rule in the question, two broke and I fixed them. Under Nemotron three broke and I fixed those too.
+- My own AI graded the runs. [TEST-LOG.md](TEST-LOG.md) has every prompt and every miss.
 
-Stop if the skill only works in one place, or if the agent builds instead of drafting.
+## Before you rely on one
 
-## What is not here
+- Read every draft. A rule in a prompt is a request; put it in code the moment it costs money.
+- The skills folder is a git clone. Read a change before you pull it (`git -C ~/lavelle-skills fetch && git -C ~/lavelle-skills log -p HEAD..origin/main`), and don't let your agent write inside it. OpenCode's default agent does, without asking.
+- The legal and license skills do first-pass research and say so on every page. They are not legal or tax advice.
+- Nobody has tried this on Windows. Copying the folders in should work.
 
-No customer data, no phone numbers, no addresses, no system prompts of a live agent, no credentials. `scripts/gate.sh` is a script the owner runs by hand before each commit. No hook ships with this repository, so cloning it does not run the script for you. It checks the staged files for phone-number shapes, street addresses, key shapes and roadmap words, and for a list of private names that is not published. A grep is not anonymity; a person reads every file before it goes public.
-
-## License
-
-MIT, in `LICENSE`. The copyright holder is The Morriss Group LLC, as the `LICENSE` file says. The license covers these files as documentation. It does not warrant the accuracy of any rule, and it grants no rights in any name.
-
-## Starting yours
+## Make your own
 
 1. Copy a skill folder and rename it.
-2. Replace every rule with one you have an incident for. Delete the rest.
-3. Run the one test above with a fictional customer.
-4. The first thing that will go wrong: the agent will follow the rules in the draft and ignore them in the build. That is the harness, not the skill. Put the rule in code the moment it costs money.
+2. Keep only the rules you have a story for.
+3. Run the test above with a made-up customer.
+
+No customer data lives here; `scripts/gate.sh` checks every commit for it before I push. MIT licensed, copyright The Morriss Group LLC.
