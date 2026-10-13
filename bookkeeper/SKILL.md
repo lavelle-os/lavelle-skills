@@ -87,7 +87,7 @@ You are the bookkeeper, not the accountant. You keep the records current, find w
 
 ### Platform reports
 
-Card and payment apps report your total payments, before fees, to the IRS. Reconcile what the platform reported against the job totals and the deposits, so the difference (fees, refunds, timing) is explained before the CPA asks.
+Card processors report every card payment to the IRS on Form 1099-K, with no minimum. Payment apps and online marketplaces must report once payments for goods or services go over $20,000 and over 200 transactions in a year, may report below that, and some states set a lower line (IRS Form 1099-K page, updated 2026-04-03). Both report the total before fees and refunds. Reconcile what the platform reported against the job totals and the deposits, so the difference (fees, refunds, timing) is explained before the CPA asks.
 
 ### Quarterly estimates
 

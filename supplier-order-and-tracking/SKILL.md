@@ -12,7 +12,7 @@ Part of [Lavelle skills](../README.md), rules files from a one-truck appliance r
 
 ## What this is
 
-A page of rules you give an AI assistant, like ChatGPT or Claude. It's for an online parts store that doesn't keep stock, where a distributor ships each part straight to the buyer. When an order is paid, the assistant gets the distributor's order ready for you to place. When the part ships, it reads the distributor's shipping email and puts the tracking number on the order. Then it emails the customer and tells you. You place and pay for every order yourself.
+A page of rules you give an AI assistant, like ChatGPT or Claude. It's for an online parts store that doesn't keep stock, where a distributor ships each part straight to the buyer. When an order is paid, the assistant gets the distributor's order ready for you to place. When the part ships, it reads the distributor's shipping email and writes the customer's email with the tracking number, for you to send. Set up with your store and email, it can do those steps itself. You place and pay for every order yourself.
 
 It comes from my one-truck appliance repair shop in Alabama, from its online parts store, and from the orders that store couldn't send on to the distributor.
 
