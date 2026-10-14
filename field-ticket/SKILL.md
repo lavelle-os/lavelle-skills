@@ -84,7 +84,7 @@ The customer-visible write-up is broken into short labeled sections with line br
 
 ### One line per thing, and a parts line says only what the part is
 
-The labor line carries the write-up and the labor price, and says whether the diagnostic fee is included. Each part gets its own line: the part's plain name and its part number, nothing else. A part line's description shows no price math: no retail price, no shipping arithmetic, no supplier name. Sales tax goes on the invoice as the state requires.
+The labor line carries the write-up and the labor price, and says whether the diagnostic fee is included. Each part gets its own line: the part's plain name and its part number, nothing else. A part line's description shows no price math: no retail price, no shipping arithmetic, no supplier name. Sales tax follows the shop's written price rule and the state's requirements. In this shop the part price already covers it, so the ticket adds no tax on top (see the part-pricing skill). Whether parts and labor are taxable is a question for the shop's CPA.
 
 **What went wrong, 2026-09-12 and 2026-09-30:** a parts line that showed the math behind the price invited the customer to redo the math. The rule became "name and number only," ruled twice.
 
