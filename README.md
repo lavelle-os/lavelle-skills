@@ -23,6 +23,8 @@ Then ask: "Using the receptionist skill, draft the booking rules and the intake 
 
 ## The skills
 
+Every skill's page starts with a plain explanation: what it is, who it's for, the trade words it uses, what you need, what it does and won't do, and a request to try with what a good answer looks like. The rules the AI follows come after that.
+
 | Skill | What it does |
 |---|---|
 | [receptionist](receptionist/SKILL.md) | Answers a trade business's phone and books on a real calendar. |
