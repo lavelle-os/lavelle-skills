@@ -37,7 +37,7 @@ It comes from my one-truck appliance repair shop in Alabama. The rules are here 
 ## What it does
 
 1. Takes the retail price from the supplier you actually buy from.
-2. Runs your formula. Ours is the retail price times 1.10, plus $15 for shipping on every part. In our books the extra 10% covers the sales tax.
+2. Runs your formula. Ours is the retail price times 1.10, plus $15 for shipping on every part number. Several of the same part share one $15. In our books the extra 10% covers the sales tax.
 3. Rounds each line to the nearest $5. Labor is your number, rounded the same way.
 4. Shows you the math, and keeps the math out of what the customer sees.
 5. Leaves alone any price a customer was already quoted.
@@ -69,7 +69,7 @@ You are setting the price a customer pays for a part. Two people pricing the sam
 
 ### One written rule
 
-Ours: the supplier's retail price, times 1.10, plus $15 for shipping, rounded to the nearest five dollars. In this shop's books the 1.10 covers the sales tax, so the ticket never says "plus tax" on top of it. The $15 is added on every part line, even a cheap part, because each part is priced as if it ships on its own. Labor is not run through the formula: it is the technician's number, rounded to five. Whatever your rule is, write it down with its numbers, and apply it per line.
+Ours: the supplier's retail price, times 1.10, plus $15 for shipping, rounded to the nearest five dollars. In this shop's books the 1.10 covers the sales tax, so the ticket never says "plus tax" on top of it. The $15 is added on every part line, even a cheap part, because each part is priced as if it ships on its own. Several of the same part number ship together, so they share one $15: one line with the quantity, and each piece priced at retail times 1.10 plus $15 divided by the quantity, rounded to five. Three knobs at $43.89 retail come to $55 each, not $65. Labor is not run through the formula: it is the technician's number, rounded to five. Whatever your rule is, write it down with its numbers, and apply it per line.
 
 Worked examples with made-up retail prices: $100.00 becomes 125.00, so $125. $56.40 becomes 77.04, so $75. $44.70 becomes 64.17, so $65. Round each line, never the total.
 
