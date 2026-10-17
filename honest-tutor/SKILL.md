@@ -31,7 +31,7 @@ It comes from building a tutor for a family member who wanted to learn a traditi
 
 ## What you need
 
-- An AI chat app. One with projects or saved instructions keeps the tutor's rules between sessions.
+- An AI chat app. One with projects or saved instructions keeps the tutor's rules between sessions. The [ai-project-setup](../ai-project-setup/SKILL.md) page says which box in the app each piece goes in, gives the setup steps, and has a test to run before anyone relies on the tutor.
 - Real sources for your subject, uploaded as files, if you want the tutor to cite them.
 - A free calculator or chart tool for anything the AI can't compute. The tutor will tell you when you need one.
 
@@ -102,7 +102,7 @@ For a subject that is a tradition or a system of meaning rather than a science, 
 
 The tutor never tells the student, or anyone the student teaches, what to do about health, medicine, money, legal matters or whether to stay in a relationship based on the subject. It says what the tradition says, then says the decision belongs to the person and the people qualified to advise them. Readings or lessons for a child or teenager stay to strengths and encouragement, with a parent present. Questions about charging money for lessons get "check your city's rules and a lawyer first," not "yes."
 
-If a student, or someone they are working with, seems to be in real distress, the tutor stops the lesson, says so kindly, and points to real help. In the United States that is calling or texting 988.
+If a student, or someone they are working with, seems to be in real distress, the tutor stops the lesson, says so kindly, and points to real help. In the United States that is calling or texting 988, or 911 if someone may be in danger now. Elsewhere, or if the country is not known, ask; never guess a number.
 
 ### Memory between sessions
 

@@ -1,6 +1,6 @@
 # Lavelle skills
 
-Seventeen rules files from a one-truck appliance repair shop in Alabama that runs on AI agents. Each one tells an agent how to do one job the way my shop does it, and most rules are there because something went wrong without them. I'm the owner, I don't write code, and these are what I learned.
+Eighteen rules files from a one-truck appliance repair shop in Alabama that runs on AI agents. Each one tells an agent how to do one job the way my shop does it, and most rules are there because something went wrong without them. I'm the owner, I don't write code, and these are what I learned.
 
 A skill is plain text. It doesn't run anything. Every one tells the agent to draft and show you, never to act on its own.
 
@@ -13,7 +13,7 @@ A skill is plain text. It doesn't run anything. Every one tells the agent to dra
 ```
 git clone https://github.com/lavelle-os/lavelle-skills ~/lavelle-skills
 mkdir -p ~/.claude/skills ~/.agents/skills
-for name in receptionist honest-tutor second-model-brief resale-identification field-ticket starting-a-home-service-business business-license-research legal-research-memo parts-lookup part-pricing repair-or-replace warranty-and-callbacks bookkeeper contracts-and-policies truck-inventory supplier-order-and-tracking review-replies; do
+for name in receptionist honest-tutor ai-project-setup second-model-brief resale-identification field-ticket starting-a-home-service-business business-license-research legal-research-memo parts-lookup part-pricing repair-or-replace warranty-and-callbacks bookkeeper contracts-and-policies truck-inventory supplier-order-and-tracking review-replies; do
   ln -s ~/lavelle-skills/$name ~/.claude/skills/$name
   ln -s ~/lavelle-skills/$name ~/.agents/skills/$name
 done
@@ -30,6 +30,7 @@ Every skill's page starts with a plain explanation: what it is, who it's for, th
 | [receptionist](receptionist/SKILL.md) | Answers a trade business's phone and books on a real calendar. |
 | [field-ticket](field-ticket/SKILL.md) | Turns what the tech says in the driveway into the ticket the customer reads. |
 | [honest-tutor](honest-tutor/SKILL.md) | Teaches one idea at a time and never makes up a number or a source. |
+| [ai-project-setup](ai-project-setup/SKILL.md) | Turns a one-line goal into the pieces of an AI chat project, says which box each goes in, and writes the setup steps. |
 | [second-model-brief](second-model-brief/SKILL.md) | Writes the brief for a second AI to check the first, and reconciles the answer. |
 | [resale-identification](resale-identification/SKILL.md) | Works out what a used piece of furniture is from photos, without guessing a price. |
 | [starting-a-home-service-business](starting-a-home-service-business/SKILL.md) | The eleven steps to open a one-person service business, in order. |
