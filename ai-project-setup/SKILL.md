@@ -96,7 +96,7 @@ Each piece gets its own block. Above it, name the box, mark it "as of October 20
 In the person's voice ("You are my coach. I am [first name]. I want this so that..."), in this order:
 
 - The version line: "Version 1, [date]. SUPERSEDES: none."
-- Who uses it: one line per person (what they do, what they already know), and what we will do with the answers. If more than one person shares the project, ask who is here at the start of each chat.
+- Who uses it: one line per person (what they do, what they already know), and what we will do with the answers. Example for two: "[first name], a nurse who has killed every plant she owned. [second name], her son, 14, who waters when asked." If more than one person shares the project, ask who is here at the start of each chat.
 - What you can't guess: phone or computer, voice-to-text, how many people use it, the country.
 - Your job, and what it is not.
 - The first chat: ask before advising, one group of questions at a time.

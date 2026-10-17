@@ -133,3 +133,12 @@ Written that evening from two setups done by hand earlier in the day (a coach fo
 - Not yet: a try-it run of the final page, a newcomer read, and an outside read by another company's AI, all before any push; the push waits for the owner's daytime read. The fixes made the page longer than the draft. Every PASS here is graded by the author's own model.
 
 Added the same evening by the owner after using a tutor project with two different friends: the instructions now name every person who uses the project, one line each, and ask who is here at the start of each chat. The pre-built page said only "who I am".
+
+## 2026-10-17, ai-project-setup on Omarchy 4.0.4 (VM), two harnesses
+
+Request (the page's try-it): set up an AI project for a made-up neighbor who wants help keeping houseplants alive; show the pieces and the steps; create nothing.
+
+- **Claude Code 2.1.296 (`claude -p`), skill loaded from ~/.claude/skills:** PASS. 1,922 words. Restated the goal, asked the one question (the neighbor's yes, marked assumed for the test), gave the case against in four lines, then name, description, instructions, knowledge files and starter message, each labeled with its box and dated "as of October 2026, check your app." Instructions came to 596 words, under the page's 600 cap, with every shared rule present. Steps for one app only, as the page says.
+- **OpenCode 1.19.0 with the free model longcat-2.5-preview-free (`opencode run`), skill loaded from ~/.agents/skills:** PASS. 1,430 words. Same order and the same boxes; instructions 555 words; it added the Gemini name and description variants on its own, which the page allows. The one slip: it dropped the "who uses it, one line per person" detail to "just me," which is acceptable for a one-person project but means the rule needs a stronger example. Fixed on the page: the example now shows two people.
+
+What this settles: the page runs on a free model, so its length is not the problem the 10/16 review feared. What it does not settle: nothing here was checked by a second AI from a different company, and no human newcomer has read the page yet.
