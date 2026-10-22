@@ -8,7 +8,7 @@ license: MIT
 
 **Drafts replies to a local business's online reviews, in the owner's voice.**
 
-Part of [Lavelle skills](../README.md), rules files from a one-truck appliance repair shop. New here? Start with that page.
+Part of [Lavelle skills](https://github.com/lavelle-os/lavelle-skills#if-you-have-never-used-github-start-here), rules files from a one-truck appliance repair shop. New here, or never used GitHub? Start with that page. Want to try this one now? Jump to [Try it](#try-it).
 
 ## What this is
 
@@ -42,7 +42,7 @@ It comes from my one-truck appliance repair shop in Alabama, from a month of me 
 
 ## Try it
 
-1. Copy all of this page, top to bottom, rules included. On GitHub, the copy button at the top right of the file does it in one click.
+1. Copy all of this page, top to bottom, rules included. On GitHub, use the icon of two overlapping squares just to the right of the word **Raw** (its label is "Copy raw file"); on a phone, the three dots beside Preview, Code and Blame, then **Copy**. The look-alike icon next to the file name copies only the address.
 2. Paste it into a new chat in any AI chat app. A free one works for this test.
 3. Type the request below. Leave off the > mark.
 
