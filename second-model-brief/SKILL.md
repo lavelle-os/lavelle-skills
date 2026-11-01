@@ -8,7 +8,7 @@ license: MIT
 
 **Writes the request for a second AI to check the first one's research, and reads the answer back before anyone acts on it.**
 
-Part of [Lavelle skills](https://github.com/lavelle-os/lavelle-skills#if-you-have-never-used-github-start-here), rules files from a one-truck appliance repair shop. New here, or never used GitHub? Start with that page. Want to try this one now? Jump to [Try it](#try-it).
+Part of [Lavelle skills](https://github.com/lavelle-os/lavelle-skills#if-you-have-never-used-github-start-here), rules files from a one-truck appliance repair shop. New here, or never used GitHub? Start with that page. AI app not set up for projects yet? [Set up your AI first](https://github.com/lavelle-os/lavelle-skills#set-up-your-ai-app-first-if-you-have-not). Want to try this one now? Jump to [Try it](#try-it).
 
 ## What this is
 
