@@ -193,7 +193,7 @@ TAGS = [
     ("chat apps", r"(For the Claude and ChatGPT chat apps)", {G, C}),
 ]
 # A sentence that starts like this stays with the sentence before it.
-CONTINUES = re.compile(r"(Its |To take its|Anthropic's docs agree|They suggest)")
+CONTINUES = re.compile(r"(Its |To take its|A model picked with|To hold every helper|Anthropic's docs agree|They suggest)")
 
 # Sentences that list one clause per app, split at "; ".
 CLAUSE_LISTS = [
