@@ -8,6 +8,8 @@ license: MIT
 
 **Gets an online parts order ready for the distributor, then gets the tracking number to the customer.**
 
+This is the one page here that acts on its own. Once it's connected to your store and your email, it marks the order shipped and emails the customer the tracking number without showing you first. To keep it to drafts, ask the assistant to draft the customer email for your approval.
+
 Part of [Lavelle skills](https://github.com/lavelle-os/lavelle-skills#if-you-have-never-used-github-start-here), rules files from a one-truck appliance repair shop. New here, or never used GitHub? Start with that page. AI app not set up for projects yet? [Set up your AI first](https://github.com/lavelle-os/lavelle-skills#set-up-your-ai-app-first-if-you-have-not). Want to try this one now? Jump to [Try it](#try-it).
 
 ## What this is
