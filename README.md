@@ -118,7 +118,7 @@ All nineteen have runs in [TEST-LOG.md](TEST-LOG.md). Where a run found a proble
 - The nine I added on October 13 have had two runs each, under Claude on the Mac, with no web: one that morning and the page's own try-it request that evening. All nine held both times. The morning runs found lines that weren't clear, and I fixed them before the evening run. They haven't run on the other machines or under OpenCode yet.
 - ai-project-setup, added October 16, had two runs on the Mac that night, then one run each on the Omarchy machine, under Claude Code and under OpenCode with a free model. All held. The OpenCode run found one weak example, and I fixed it: fixed, not re-run.
 - set-up-your-ai, added November 1, has had two runs under Claude with made-up people, plus a read by an AI reviewer playing someone who has never used an AI app. Both runs held. What they found is fixed, not re-run, and the five shorter per-app pages and the corrections from an outside review haven't had a run either. Nobody has pasted it into a real ChatGPT, Claude, Grok or Perplexity app yet.
-- My own AI graded the runs. [TEST-LOG.md](TEST-LOG.md) has every run, dated, with the request described in a sentence or two, what held and every miss. It doesn't keep the exact text of each prompt, so nobody can repeat a run word for word from it.
+- My own AI graded the runs. [TEST-LOG.md](TEST-LOG.md) has every run, dated, with the request described in a sentence or two, what held and every miss. For runs before 2026-11-04 it doesn't keep the exact text of the prompt, so nobody can repeat those word for word. From that day on, each run's exact prompt is saved in [test-prompts/](test-prompts/) and linked from its log entry.
 
 ## Before you rely on one
 
