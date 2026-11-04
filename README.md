@@ -111,12 +111,14 @@ Every skill's page starts with a plain explanation: what it is, who it's for, th
 
 ## How they were tested
 
-- The first eight ran under Claude Code on a Mac, an Ubuntu server and a fresh Omarchy 4.0.4 install, and under OpenCode with NVIDIA's free Nemotron model.
-- Each of those eight loaded on both agents. Under Claude all eight held their rules; asked plainly, without the rule in the question, two broke and I fixed them. Under Nemotron three broke and I fixed those too.
-- The nine I added on October 13 have had one run each, under Claude on the Mac, with no web. All nine held. Every run found lines that weren't clear, and I fixed them that day. They haven't run on the other machines or under OpenCode yet.
-- ai-project-setup, added October 16, had two runs on the Mac that night, then one run each on the Omarchy machine, under Claude Code and under OpenCode with a free model. All held.
-- set-up-your-ai, added November 1, has had two runs under Claude with made-up people, plus a read by an AI reviewer playing someone who has never used an AI app. Both runs held. Nobody has pasted it into a real ChatGPT, Grok or Perplexity app yet.
-- My own AI graded the runs. [TEST-LOG.md](TEST-LOG.md) has every prompt and every miss.
+All nineteen have runs in [TEST-LOG.md](TEST-LOG.md). Where a run found a problem and I fixed it, the line below says whether the fix was run again.
+
+- The first eight ran under Claude Code on a Mac and on a fresh Omarchy 4.0.4 install, and under OpenCode with NVIDIA's free Nemotron model. Two of them, receptionist and legal-research-memo, also ran on an Ubuntu server.
+- Each of those eight loaded on both agents. Under Claude all eight held their rules; asked plainly, without the rule in the question, two broke. I fixed them and ran them again, and both held. Under Nemotron three broke and I fixed them: fixed, not re-run under Nemotron.
+- The nine I added on October 13 have had two runs each, under Claude on the Mac, with no web: one that morning and the page's own try-it request that evening. All nine held both times. The morning runs found lines that weren't clear, and I fixed them before the evening run. They haven't run on the other machines or under OpenCode yet.
+- ai-project-setup, added October 16, had two runs on the Mac that night, then one run each on the Omarchy machine, under Claude Code and under OpenCode with a free model. All held. The OpenCode run found one weak example, and I fixed it: fixed, not re-run.
+- set-up-your-ai, added November 1, has had two runs under Claude with made-up people, plus a read by an AI reviewer playing someone who has never used an AI app. Both runs held. What they found is fixed, not re-run, and the five shorter per-app pages and the corrections from an outside review haven't had a run either. Nobody has pasted it into a real ChatGPT, Claude, Grok or Perplexity app yet.
+- My own AI graded the runs. [TEST-LOG.md](TEST-LOG.md) has every run, dated, with the request described in a sentence or two, what held and every miss. It doesn't keep the exact text of each prompt, so nobody can repeat a run word for word from it.
 
 ## Before you rely on one
 

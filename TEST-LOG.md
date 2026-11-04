@@ -184,3 +184,12 @@ An outside review by Grok read this page; a Claude reconciliation, kept in the o
 - **Script:** the two new helper sentences start with words no app tag knows, so the first build put them, and "Anthropic's docs agree" after them, on the ChatGPT, Claude and Perplexity versions: the gap the last entry named. Their first words ("A model picked with", "To hold every helper") were added to the script's list of sentences that stay with the one before; rebuilt, they are on the Claude Code version only. No heading or selector changed. A second run changed nothing.
 - **Word counts** (wc, whole file): ChatGPT 4,740; Claude 5,077; Claude Code 6,751; Grok 4,050; Perplexity 4,665. The full page is 10,975 (64,075 characters). Every page grew; none meets the 3,000 to 3,800 target.
 - **Not yet:** the reconciliation's findings rejected or answered with no change (5, 6, 7, 8, 12, 15, 17) stay as the page had them; its unverified list (Codex deletes, the desktop labels, Claude's Effort and Thinking menus) was not re-read, since no web was fetched. No run of the corrected page. Committed locally after the gate; the push waits for the owner's read. Every PASS here is graded by the author's own model.
+
+## 2026-11-04, the README's testing section corrected after an outside review (no new run; older entries keep their words)
+
+An outside code review read the README at b0bd703 and found its testing lines ran ahead of this log. Checked against this log and corrected in the README, not here:
+- Nemotron's three breaks (2026-10-12 ~6:50 PM) were fixed but not re-run under OpenCode. The README said "I fixed those too"; it now says fixed, not re-run. Claude's two bare-prompt breaks were fixed and the fixed files held on the VM the same evening; the README now says so.
+- Only receptionist and legal-research-memo ran on the Ubuntu server (2026-10-11 ~11:20 PM). The README said all eight did.
+- The nine added 2026-10-13 had two runs each, the morning test and the evening try-it run. The README said one.
+- ai-project-setup's two-person example (2026-10-17) and set-up-your-ai's fixes (2026-11-01 and 11-02) have not been run since. The README now says fixed, not re-run.
+- The README said this log "has every prompt." It describes each request in a sentence or two and does not keep the exact prompt text; the README now says that.
