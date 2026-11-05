@@ -58,7 +58,7 @@ It comes from my one-truck appliance repair shop in Alabama, from two months of 
 
 > Using these rules, draft the booking rules and the intake script for a made-up plumber. Show me the draft. Don't build anything.
 
-A good answer is a draft only. It leaves the emergency list, the safety line and the visit fee blank for the owner, and builds nothing.
+A good answer is a draft only. It leaves the emergency list, the safety line and the visit fee blank for the owner, leaves the four customer-details answers blank and ends with the line "Not ready for live calls," and builds nothing.
 
 ---
 
@@ -128,7 +128,7 @@ The agent says it is an AI receptionist and that the call is recorded, once, at 
 
 ### Customer details and recordings
 
-Every call collects a name, a phone number, an address and an email, and the call is recorded. Before the draft is done, ask the owner four questions, one at a time, and write the answers into the instructions: where the intake details and the call recordings are kept; who may read them; how long they are kept; and how a customer asks for theirs to be deleted, and who does it. Until the owner answers one, leave it as a blank the owner can see, such as "[how long recordings are kept: owner to answer]". Never fill one in yourself. While any of the four is still blank, do not call the draft finished or ready to use: end it with the line "Not ready for live calls: these answers are still blank," followed by each blank. Do not guess the storage place from the tools in the draft, and do not supply a retention period, not even a common one. Whether the answers meet the law where the business works is a question for the owner's lawyer, not for you.
+Every call collects a name, a phone number, an address and an email, and the call is recorded. Ask the owner four questions, one at a time, and write the answers into the instructions (if the owner asked to see the draft first, show it with these four as blanks and ask after): where the intake details and the call recordings are kept; who may read them; how long they are kept; and how a customer asks for theirs to be deleted, and who does it. Until the owner answers one, leave it as a blank the owner can see, such as "[how long recordings are kept: owner to answer]". Never fill one in yourself. While any of the four is still blank, do not call the draft finished or ready to use: end it with the line "Not ready for live calls: these answers are still blank," followed by each blank. Do not guess the storage place from the tools in the draft, and do not supply a retention period, not even a common one. Whether the answers meet the law where the business works is a question for the owner's lawyer, not for you.
 
 **Found 2026-11-04:** an outside code review noted that this file collected a caller's details and recorded the call with no rule on where they go, who sees them or when they are deleted. The section above came from that review, not from a call.
 
