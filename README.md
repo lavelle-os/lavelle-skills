@@ -2,7 +2,7 @@
 
 Nineteen rules files from a one-truck appliance repair shop in Alabama that runs on AI agents. Each one tells an agent how to do one job the way my shop does it, and most rules are there because something went wrong without them. I'm the owner, I don't write code, and these are what I learned.
 
-A skill is plain text. It doesn't run anything. Every one tells the agent to draft and show you, never to act on its own.
+A skill is plain text. It doesn't run anything. Every one tells the agent to draft and show you, never to act on its own, with one exception: [supplier-order-and-tracking](supplier-order-and-tracking/SKILL.md). Once it's connected to your store and your email, it marks an order shipped and emails the customer the tracking number by itself, without showing you first. Its page says how to keep it to drafts.
 
 ## If you have never used GitHub, start here
 
