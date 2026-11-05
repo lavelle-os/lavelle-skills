@@ -2,6 +2,8 @@
 
 *Every run of the one test, dated, with what it caught. A skill with no test log is a draft.*
 
+*From 2026-11-04, each new entry links to the exact prompt it used, saved in [test-prompts/](test-prompts/). Entries before that date describe the request instead.*
+
 ## 2026-10-07, receptionist, Claude app (phone), skill pasted into a new chat, not installed
 Request: draft booking rules and intake for a fictional plumber; show, do not build. **Result: drafted, did not build.** Placeholders left in brackets for fee, zips, hours, owner name; nothing invented. Findings the agent raised on its own, in order of weight: (1) the rules had no emergency path, and a plumber has emergencies an appliance shop mostly does not; it left a marked slot and one gas-smell safety line for the owner to approve. Fixed the same evening: an "Emergencies skip the queue" rule. (2) Too many rules in the prompt that belong in code (double-booking, one window per address). Already in the failure modes; left as is. (3) Nothing tested on a real call; the drafted rules are untested guesses for a business that does not exist. Correct, and the point of the test.
 Second run, 2026-10-07 evening, a different model (a smaller one), reading the skill from disk, fictional electrician, told to draft only and to say what the rules get wrong for an electrician. **Result: drafted, built nothing, wrote no files.** Found six gaps: two were real behaviors the file had not written down (moving an appointment; no caller ID), added as rules the same evening; four are untested for this shop (estimate and install calls, double-booking keyed to the caller not the address, genuine utility or inspector calls and the utility-shutoff scam, trade-specific safety lines), listed under "Found by tests, not yet by calls." Still not done: a run on a second machine with the skill installed rather than read from a path.
@@ -184,6 +186,16 @@ An outside review by Grok read this page; a Claude reconciliation, kept in the o
 - **Script:** the two new helper sentences start with words no app tag knows, so the first build put them, and "Anthropic's docs agree" after them, on the ChatGPT, Claude and Perplexity versions: the gap the last entry named. Their first words ("A model picked with", "To hold every helper") were added to the script's list of sentences that stay with the one before; rebuilt, they are on the Claude Code version only. No heading or selector changed. A second run changed nothing.
 - **Word counts** (wc, whole file): ChatGPT 4,740; Claude 5,077; Claude Code 6,751; Grok 4,050; Perplexity 4,665. The full page is 10,975 (64,075 characters). Every page grew; none meets the 3,000 to 3,800 target.
 - **Not yet:** the reconciliation's findings rejected or answered with no change (5, 6, 7, 8, 12, 15, 17) stay as the page had them; its unverified list (Codex deletes, the desktop labels, Claude's Effort and Thinking menus) was not re-read, since no web was fetched. No run of the corrected page. Committed locally after the gate; the push waits for the owner's read. Every PASS here is graded by the author's own model.
+
+## 2026-11-04, the README's testing section corrected after an outside review (no new run; older entries keep their words)
+
+An outside code review read the README at b0bd703 and found its testing lines ran ahead of this log. Checked against this log and corrected in the README, not here:
+- Nemotron's three breaks (2026-10-12 ~6:50 PM) were fixed but not re-run under OpenCode. The README said "I fixed those too"; it now says fixed, not re-run. Claude's two bare-prompt breaks were fixed and the fixed files held on the VM the same evening; the README now says so.
+- Only receptionist and legal-research-memo ran on the Ubuntu server (2026-10-11 ~11:20 PM). The README said all eight did.
+- The nine added 2026-10-13 had two runs each, the morning test and the evening try-it run. The README said one.
+- ai-project-setup's two-person example (2026-10-17) and set-up-your-ai's fixes (2026-11-01 and 11-02) have not been run since. The README now says fixed, not re-run.
+- The README said this log "has every prompt." It describes each request in a sentence or two and does not keep the exact prompt text; the README now says that.
+- Second independent review, 2026-11-05: the Mac runs of the first eight were Sonnet reading each page from disk (2026-10-11 morning), not Claude Code, which ran them on the Ubuntu server and the Omarchy VM; the README now says so. Of Nemotron's three breaks, only field-ticket and the home-service page were changed; the receptionist break (it wrote a file and showed no draft) got an install line about the agent writing inside the skills folder, not a change to the receptionist page. The README now says that instead of "I fixed them."
 
 ## 2026-11-05, receptionist: a new rule from the 2026-11-04 code review, not yet run
 
