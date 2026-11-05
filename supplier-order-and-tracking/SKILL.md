@@ -8,7 +8,7 @@ license: MIT
 
 **Gets an online parts order ready for the distributor, then gets the tracking number to the customer.**
 
-This is the one page here that acts on its own. Once it's connected to your store and your email, it marks the order shipped and emails the customer the tracking number without showing you first. To keep it to drafts, ask the assistant to draft the customer email for your approval.
+This is the one page here that acts on its own. Once it's connected to your store and your email, it marks the order shipped and emails the customer the tracking number without showing you first. To keep it to drafts, tell the assistant to stop before the tracking number goes on: show you the matched order, the tracking number and the customer email, and apply nothing until you say so. Drafting the email alone is not enough. Applying the tracking number is what marks the order shipped and completes it, and if your store sends its own shipped or completed email, that one goes out too.
 
 Part of [Lavelle skills](https://github.com/lavelle-os/lavelle-skills#if-you-have-never-used-github-start-here), rules files from a one-truck appliance repair shop. New here, or never used GitHub? Start with that page. AI app not set up for projects yet? [Set up your AI first](https://github.com/lavelle-os/lavelle-skills#set-up-your-ai-app-first-if-you-have-not). Want to try this one now? Jump to [Try it](#try-it).
 
@@ -80,7 +80,7 @@ For each order: ship blind (the customer's address, no distributor branding or i
 
 ### When it ships
 
-The distributor's shipment email is matched to the open order by the ship-to zip code and confirmed by the last name. The tracking number is applied once: the order is marked shipped, the customer is emailed, and the store order is completed. An empty tracking number is refused, and the same number with spaces or different case counts as the same number.
+The distributor's shipment email is matched to the open order by the ship-to zip code and confirmed by the last name. The tracking number is applied once: the order is marked shipped, the customer is emailed, and the store order is completed. An empty tracking number is refused, and the same number with spaces or different case counts as the same number. If the owner asked to keep this page to drafts, stop before any of that: show the owner the matched order, the tracking number and the customer email, and apply nothing until the owner says to.
 
 **What went wrong, 2026-10-12:** the first fully automatic run applied a tracking number within a minute of the distributor's email. It also showed that nothing told the owner. A shipped alert was added that day.
 
